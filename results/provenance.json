@@ -1,0 +1,32 @@
+{
+  "recorded_run": "2026-10-11 two DGX Spark experiment",
+  "original_source_sha256": {
+    "src/a_serving.py": "001747849623dcea5a9dbb1245e35141e960c7c898ae1246d202d5b551336e7f",
+    "src/analyze_a.py": "4cf94a0502b7d95693ce80d65bb11255975dffafabcafb5391002978403368d3",
+    "src/audit_cycles.py": "9643c4b98d886a0f284065a2a586a68581c7377fc9a224ec050d2ae4aa98f766",
+    "src/report_a.py": "40a3aaa9d74e57f9114df59c90c813b58e00daf4f041dfa59c68f0d7917705a3",
+    "src/e_kv.py": "9fbb6558984cb34c11d804cc43a96a4d09d10d664342e15664b48b8224592d3d",
+    "src/analyze_e.py": "f0dab219fb66a1d5ed90f09f11e065e0114df46d4bfb030f1da437c15ce91ed2",
+    "tests/test_a_serving.py": "77d3591144de21875c4693fb2503ab05ada027fa876a10d5133faf84ae4950e6",
+    "tests/test_analyze_a.py": "8f73f5d0b5641f257e8e328e93599c8a9b32adba3e654090b41bf2fad8297d73",
+    "tests/test_audit_cycles.py": "5db353b6ebde37f790cbd1fcc12129a71e1733c096075cbc63471b55a0bb510d",
+    "tests/test_report_a.py": "a6709830339fa1c16d2b5eea1904e866244c0e52860bf9f31236cb0362bc1fd0",
+    "tests/test_e_kv.py": "cd571eb43f9eb69e7f605d2454be1ce210fbb48b8a093893f1936ac8efa1a70a",
+    "tests/test_analyze_e.py": "a8ef05107822173569a6430c4919e71224b4859aa7f1ea794ebe708f7cd644ea"
+  },
+  "native_engine_sha256": "ec825d641542c9be18d36926c87bf52ca4e02ff22197645bf7e32def26d6c4a5",
+  "strata_checkout_commit": "52470278377b1d1e6d248399c4bbbdd754ac4680",
+  "native_source_fingerprint": "2a7312862974d823",
+  "native_build_version": "0.1.39",
+  "vllm_tested_source_commit": "61f084b5f3e58aa3d3eb5c86aeaf4686c460c478",
+  "vllm_alignment_pr_head": "784b5f890f8382a872632e40cbf0ef68e355f1ce",
+  "source_selection": "Six experiment modules and six fixture files are byte-identical to retained sources. Host lifecycle scripts are omitted.",
+  "data_selection": "Compact aggregate evidence only. Paths were redacted. Request journals and raw prompts are retained privately on the original machines.",
+  "original_artifact_sha256": {
+    "a-final-report.json": "972cff7c3e62a2171d33d584d3fd8e60d87bad299abeb62a3b10cf516d7f3421",
+    "a-final-analysis-v4.json": "366444e4bae98f489ab1cef023c80ee45743a9318f0618e0616606c0abe04dbe",
+    "e-final-evidence.json": "1fe2d64dd38649eeedea123a821f142f9d3735f082dd40c44a3106b74625605d",
+    "d-empty-metadata.patch": "106b94fa60d89f55ec91d60c38ec666c48f26ef75a6bfd3c39d3c94ea908004f"
+  },
+  "reproducibility_scope": "Readers can recompute A summary statistics from published compact inputs and run CPU fixtures. Full raw-journal audit and E request-level recomputation require original retained journals or a new run."
+}

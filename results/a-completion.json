@@ -1,0 +1,9 @@
+{
+  "started_at_utc": "2026-10-11T07:54:55.009399+00:00",
+  "finished_at_utc": "2026-10-11T16:09:36.628145+00:00",
+  "exit_code": 0,
+  "analyzer_sha256": "4cf94a0502b7d95693ce80d65bb11255975dffafabcafb5391002978403368d3",
+  "duration_scope": "Coordinator elapsed wall time around actual replay subprocess; includes request drains, excludes subsequent analyzer runtime.",
+  "serving_sha256": "001747849623dcea5a9dbb1245e35141e960c7c898ae1246d202d5b551336e7f",
+  "no_completion_claim_from_alive_process": true
+}

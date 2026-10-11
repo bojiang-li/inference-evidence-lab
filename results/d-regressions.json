@@ -1,0 +1,25 @@
+{
+  "rows": [
+    {
+      "variant": "baseline",
+      "returncode": 1,
+      "seconds": 1.3709394931793213,
+      "log": "retained-run/d-ipc/empty-fix-baseline.log"
+    },
+    {
+      "variant": "fixed",
+      "returncode": 0,
+      "seconds": 8.220212459564209,
+      "log": "retained-run/d-ipc/empty-fix-fixed.log"
+    }
+  ],
+  "status": "completed",
+  "expected_returncodes": [
+    1,
+    0
+  ],
+  "actual_returncodes": [
+    1,
+    0
+  ]
+}

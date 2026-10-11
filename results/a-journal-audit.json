@@ -1,0 +1,1029 @@
+{
+  "scope": "Retained complete requested cycles only; no latency/SLO effect analysis, source mutation or duration certification.",
+  "serving_sha256": "001747849623dcea5a9dbb1245e35141e960c7c898ae1246d202d5b551336e7f",
+  "manifest_sha256": "546528d73a24d31f7023436cbcea13203310a8839644321045f200e718991512",
+  "auditor_sha256": "9643c4b98d886a0f284065a2a586a68581c7377fc9a224ec050d2ae4aa98f766",
+  "audited_cycles": 12,
+  "ignored_other_journals": 0,
+  "all_retained_journals_audited": true,
+  "eight_hour_requirement_proved": false,
+  "paired_scope": "Scheduled arrivals within 10 microseconds, target/family/cancel trace, and exact shared prompt hashes; intended-cold namespaces differ explicitly.",
+  "correctness_scope": "Retained text independently parsed using the frozen code-fence-normalized JSON contract; flags must agree. Wrong answers remain failures, not a reason to omit rows.",
+  "totals": {
+    "offered": 56552,
+    "terminal": 56552,
+    "complete": 17452,
+    "incorrect_complete_tasks": 0,
+    "planned_seconds": 28800.0
+  },
+  "blocks": [
+    {
+      "journal": "block-0000-cache_feedback.jsonl",
+      "journal_sha256": "e8a0b473424a7264312fcd6646bea385bffd570ca18eea3e0ca6c429b58d8f3a",
+      "policy": "cache_feedback",
+      "seed": 20268011,
+      "rate": 1.176,
+      "offered": 824,
+      "terminal": 824,
+      "complete": 378,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 434,
+        "complete": 378,
+        "intentional_cancel": 12
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0001-cache_aware.jsonl",
+      "journal_sha256": "4a1ac20c6d2362e7d62ba808033b716e1152d13ec059689d98049b289c769449",
+      "policy": "cache_aware",
+      "seed": 20268011,
+      "rate": 1.176,
+      "offered": 824,
+      "terminal": 824,
+      "complete": 372,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 438,
+        "complete": 372,
+        "intentional_cancel": 14
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0002-least_queue.jsonl",
+      "journal_sha256": "89b92759ba821cb2e071ab4ee0cd159e49c4b62404ec94db0c11c72766eeaf07",
+      "policy": "least_queue",
+      "seed": 20268011,
+      "rate": 1.176,
+      "offered": 824,
+      "terminal": 824,
+      "complete": 374,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 435,
+        "complete": 374,
+        "intentional_cancel": 15
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0003-round_robin.jsonl",
+      "journal_sha256": "1010ae399f1dd70e261e569a0ada2b9d2790c53f922ff04f25fc922e88ec8911",
+      "policy": "round_robin",
+      "seed": 20268011,
+      "rate": 1.176,
+      "offered": 824,
+      "terminal": 824,
+      "complete": 311,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 502,
+        "complete": 311,
+        "intentional_cancel": 11
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0004-round_robin.jsonl",
+      "journal_sha256": "085fd1ee1c74901f1f5de32d9be51dc6ef3392a85c4b6db743dbd87c830e7acf",
+      "policy": "round_robin",
+      "seed": 20268012,
+      "rate": 2.184,
+      "offered": 1531,
+      "terminal": 1531,
+      "complete": 391,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 1122,
+        "complete": 391,
+        "intentional_cancel": 18
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0005-cache_feedback.jsonl",
+      "journal_sha256": "613dba838a62810a1b2940806ca41785aed1f72e8c6218bc37fb38cf0e809e2e",
+      "policy": "cache_feedback",
+      "seed": 20268012,
+      "rate": 2.184,
+      "offered": 1531,
+      "terminal": 1531,
+      "complete": 399,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "complete": 399,
+        "client_overload": 1121,
+        "intentional_cancel": 11
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0006-least_queue.jsonl",
+      "journal_sha256": "542c241449651486de2cb37dc32ecb2aed02a42673618014f5e31d5a699b9d9e",
+      "policy": "least_queue",
+      "seed": 20268012,
+      "rate": 2.184,
+      "offered": 1531,
+      "terminal": 1531,
+      "complete": 360,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 1161,
+        "complete": 360,
+        "intentional_cancel": 10
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0007-cache_aware.jsonl",
+      "journal_sha256": "bada927ba7365394d53a7a5333141a7fa5b2b3438015b619a9560008d18bc857",
+      "policy": "cache_aware",
+      "seed": 20268012,
+      "rate": 2.184,
+      "offered": 1531,
+      "terminal": 1531,
+      "complete": 381,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 1137,
+        "complete": 381,
+        "intentional_cancel": 13
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0008-cache_feedback.jsonl",
+      "journal_sha256": "149f76d6d612701e07ce0a7a74a62d4d4361c8810a7839b1c652477d829562af",
+      "policy": "cache_feedback",
+      "seed": 20268013,
+      "rate": 1.176,
+      "offered": 835,
+      "terminal": 835,
+      "complete": 387,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 439,
+        "complete": 387,
+        "intentional_cancel": 9
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0009-round_robin.jsonl",
+      "journal_sha256": "6976ef70ac47bb1e5f7bbfe5e3f9a28b531e3f118ec0f521574ae90654d659c8",
+      "policy": "round_robin",
+      "seed": 20268013,
+      "rate": 1.176,
+      "offered": 835,
+      "terminal": 835,
+      "complete": 353,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 472,
+        "complete": 353,
+        "intentional_cancel": 10
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0010-least_queue.jsonl",
+      "journal_sha256": "0bbc9330ae8531ea9876d11ba32fa59bcae179ca52bc50e460fd4060a53da0ed",
+      "policy": "least_queue",
+      "seed": 20268013,
+      "rate": 1.176,
+      "offered": 835,
+      "terminal": 835,
+      "complete": 384,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 438,
+        "complete": 384,
+        "intentional_cancel": 13
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0011-cache_aware.jsonl",
+      "journal_sha256": "84e67e7da25eaaa279355fc282b9b3e0a22912aefb2ae00dd70412d8fa2c2bc0",
+      "policy": "cache_aware",
+      "seed": 20268013,
+      "rate": 1.176,
+      "offered": 835,
+      "terminal": 835,
+      "complete": 388,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 435,
+        "complete": 388,
+        "intentional_cancel": 12
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0012-round_robin.jsonl",
+      "journal_sha256": "63be62e5fba3c1bc150e47e8a4e9503a251e4e00741ba39e16dd7a0ce30f1896",
+      "policy": "round_robin",
+      "seed": 20268014,
+      "rate": 2.184,
+      "offered": 1557,
+      "terminal": 1557,
+      "complete": 328,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 1213,
+        "complete": 328,
+        "intentional_cancel": 16
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0013-cache_aware.jsonl",
+      "journal_sha256": "dd3014e7a2f423abe5737fa0ee65f6c9eb12e40f6313e7ba2d22726f3ff246ce",
+      "policy": "cache_aware",
+      "seed": 20268014,
+      "rate": 2.184,
+      "offered": 1557,
+      "terminal": 1557,
+      "complete": 334,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 1213,
+        "complete": 334,
+        "intentional_cancel": 10
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0014-least_queue.jsonl",
+      "journal_sha256": "48823fc8972fd3e91853dea166233a006b8bf153d6750ae4e92bdd98fcac59e3",
+      "policy": "least_queue",
+      "seed": 20268014,
+      "rate": 2.184,
+      "offered": 1557,
+      "terminal": 1557,
+      "complete": 369,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 1177,
+        "complete": 369,
+        "intentional_cancel": 11
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0015-cache_feedback.jsonl",
+      "journal_sha256": "9d1b8872502a7a12bc886a2cd4f7a1cfd3c0ed8bd9397bdb5cb765733d06466d",
+      "policy": "cache_feedback",
+      "seed": 20268014,
+      "rate": 2.184,
+      "offered": 1557,
+      "terminal": 1557,
+      "complete": 361,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 1187,
+        "complete": 361,
+        "intentional_cancel": 9
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0016-least_queue.jsonl",
+      "journal_sha256": "3c95c0e1090514ec98d02798c639d36052209cfe811ab139332a33c15de5b0f2",
+      "policy": "least_queue",
+      "seed": 20268015,
+      "rate": 1.176,
+      "offered": 791,
+      "terminal": 791,
+      "complete": 377,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "complete": 377,
+        "client_overload": 404,
+        "intentional_cancel": 10
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0017-cache_aware.jsonl",
+      "journal_sha256": "20afb3431d1a6fbf5296d2b76cabe4db778ccbafe63b282aa86b5e423b1910cc",
+      "policy": "cache_aware",
+      "seed": 20268015,
+      "rate": 1.176,
+      "offered": 791,
+      "terminal": 791,
+      "complete": 381,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "complete": 381,
+        "client_overload": 399,
+        "intentional_cancel": 11
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0018-round_robin.jsonl",
+      "journal_sha256": "ebb2dc762453a125a51eee27cc3a1b36f341d1ea49dbc7b50475bcd245e60865",
+      "policy": "round_robin",
+      "seed": 20268015,
+      "rate": 1.176,
+      "offered": 791,
+      "terminal": 791,
+      "complete": 340,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "complete": 340,
+        "client_overload": 444,
+        "intentional_cancel": 7
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0019-cache_feedback.jsonl",
+      "journal_sha256": "0603f8a404c3be0860b4174ee739f3989bbac0056f255bd36341be7458785802",
+      "policy": "cache_feedback",
+      "seed": 20268015,
+      "rate": 1.176,
+      "offered": 791,
+      "terminal": 791,
+      "complete": 389,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "complete": 389,
+        "client_overload": 392,
+        "intentional_cancel": 10
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0020-round_robin.jsonl",
+      "journal_sha256": "4834f72949f58cd9de8983282fd620e39766ef2962754eac4e222bbdaa870004",
+      "policy": "round_robin",
+      "seed": 20268016,
+      "rate": 2.184,
+      "offered": 1555,
+      "terminal": 1555,
+      "complete": 323,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 1221,
+        "complete": 323,
+        "intentional_cancel": 11
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0021-cache_aware.jsonl",
+      "journal_sha256": "ae04adbf40895fc242c3426939ab005f97e8b0fcbc02e305d256a90982492802",
+      "policy": "cache_aware",
+      "seed": 20268016,
+      "rate": 2.184,
+      "offered": 1555,
+      "terminal": 1555,
+      "complete": 354,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 1192,
+        "complete": 354,
+        "intentional_cancel": 9
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0022-least_queue.jsonl",
+      "journal_sha256": "e3f2853e7717abd3e91cea305fd5c882d3b89e22cb39f92a70f9e1f9f91593e6",
+      "policy": "least_queue",
+      "seed": 20268016,
+      "rate": 2.184,
+      "offered": 1555,
+      "terminal": 1555,
+      "complete": 384,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 1155,
+        "complete": 384,
+        "intentional_cancel": 16
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0023-cache_feedback.jsonl",
+      "journal_sha256": "d9f50a5602ef0afa8ebd58358255673c3c2c8e862d27e3b6e4053024bd106d98",
+      "policy": "cache_feedback",
+      "seed": 20268016,
+      "rate": 2.184,
+      "offered": 1555,
+      "terminal": 1555,
+      "complete": 367,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 1175,
+        "complete": 367,
+        "intentional_cancel": 13
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0024-cache_feedback.jsonl",
+      "journal_sha256": "4bcf33404dd734c14e1af698586afcb3b1a52c44bd74a2e8d215efc7c4d26db8",
+      "policy": "cache_feedback",
+      "seed": 20268017,
+      "rate": 1.176,
+      "offered": 892,
+      "terminal": 892,
+      "complete": 365,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 511,
+        "complete": 365,
+        "intentional_cancel": 16
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0025-round_robin.jsonl",
+      "journal_sha256": "076642e4ca8cc680a378a3e151ba9e642c67fcbed20ba05e57d9e910f04c087a",
+      "policy": "round_robin",
+      "seed": 20268017,
+      "rate": 1.176,
+      "offered": 892,
+      "terminal": 892,
+      "complete": 316,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 567,
+        "complete": 316,
+        "intentional_cancel": 9
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0026-cache_aware.jsonl",
+      "journal_sha256": "2718e1e8db6a729248af9a01c72a594b7373648a5389cafafac4f99aa11c22a8",
+      "policy": "cache_aware",
+      "seed": 20268017,
+      "rate": 1.176,
+      "offered": 892,
+      "terminal": 892,
+      "complete": 392,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 485,
+        "complete": 392,
+        "intentional_cancel": 15
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0027-least_queue.jsonl",
+      "journal_sha256": "05cec846953d73162b6385cffd5fe0f10fcd3e93a03236227f2273168a9ac29a",
+      "policy": "least_queue",
+      "seed": 20268017,
+      "rate": 1.176,
+      "offered": 892,
+      "terminal": 892,
+      "complete": 361,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 522,
+        "complete": 361,
+        "intentional_cancel": 9
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0028-least_queue.jsonl",
+      "journal_sha256": "af71626b1539e78ab62636d1c312fac09f6ca7c6f7ab90842807d9bd81c6561b",
+      "policy": "least_queue",
+      "seed": 20268018,
+      "rate": 2.184,
+      "offered": 1508,
+      "terminal": 1508,
+      "complete": 392,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 1108,
+        "complete": 392,
+        "intentional_cancel": 8
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0029-round_robin.jsonl",
+      "journal_sha256": "3486605b495bfe2a4fd91db3c8fe9a0fa56dd8ee50c8efb81638ab36992b1392",
+      "policy": "round_robin",
+      "seed": 20268018,
+      "rate": 2.184,
+      "offered": 1508,
+      "terminal": 1508,
+      "complete": 328,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "complete": 328,
+        "client_overload": 1176,
+        "intentional_cancel": 4
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0030-cache_aware.jsonl",
+      "journal_sha256": "e047af001f4ba41af6fa795e1e15e513e235d38ea20b1b036cf77ec669c0433f",
+      "policy": "cache_aware",
+      "seed": 20268018,
+      "rate": 2.184,
+      "offered": 1508,
+      "terminal": 1508,
+      "complete": 362,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 1138,
+        "complete": 362,
+        "intentional_cancel": 8
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0031-cache_feedback.jsonl",
+      "journal_sha256": "a23d8838de13c6f3188296b02f50846c1d3e2313a306c823dc170fd16a2c6083",
+      "policy": "cache_feedback",
+      "seed": 20268018,
+      "rate": 2.184,
+      "offered": 1508,
+      "terminal": 1508,
+      "complete": 379,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "complete": 379,
+        "client_overload": 1119,
+        "intentional_cancel": 10
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0032-round_robin.jsonl",
+      "journal_sha256": "4d825449392d72b00a781f11f0811bd5f6c38f52233fc57fec91f8659aa99aa4",
+      "policy": "round_robin",
+      "seed": 20268019,
+      "rate": 1.176,
+      "offered": 821,
+      "terminal": 821,
+      "complete": 328,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "complete": 328,
+        "client_overload": 482,
+        "intentional_cancel": 11
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0033-least_queue.jsonl",
+      "journal_sha256": "18e925db87d5bf7c0a59cd09e0028518d6e29a5a054e7e1ff2dbc9e34b2aa6c0",
+      "policy": "least_queue",
+      "seed": 20268019,
+      "rate": 1.176,
+      "offered": 821,
+      "terminal": 821,
+      "complete": 383,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "complete": 383,
+        "client_overload": 426,
+        "intentional_cancel": 12
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0034-cache_feedback.jsonl",
+      "journal_sha256": "d7a443aa7d34d846f33b86b094b794f4c21c8e5f96139c2cd35f2415cb5c09ea",
+      "policy": "cache_feedback",
+      "seed": 20268019,
+      "rate": 1.176,
+      "offered": 821,
+      "terminal": 821,
+      "complete": 364,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "complete": 364,
+        "client_overload": 448,
+        "intentional_cancel": 9
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0035-cache_aware.jsonl",
+      "journal_sha256": "3e51b1cf2e273e440a5fd41c726b985411bc310b265eb591c85fe71fd08db60d",
+      "policy": "cache_aware",
+      "seed": 20268019,
+      "rate": 1.176,
+      "offered": 821,
+      "terminal": 821,
+      "complete": 336,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 473,
+        "complete": 336,
+        "intentional_cancel": 12
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0036-cache_aware.jsonl",
+      "journal_sha256": "58b9f7c12e1377abc6d2455002dd4dd7984ff33ffbcec8e7f33776ba83a0392b",
+      "policy": "cache_aware",
+      "seed": 20268020,
+      "rate": 2.184,
+      "offered": 1508,
+      "terminal": 1508,
+      "complete": 341,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 1156,
+        "complete": 341,
+        "intentional_cancel": 11
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0037-cache_feedback.jsonl",
+      "journal_sha256": "fc9e53f7e1c4bffb7573e9e85a063c73c73c129c22a918f8bc6b723d21f85d5d",
+      "policy": "cache_feedback",
+      "seed": 20268020,
+      "rate": 2.184,
+      "offered": 1508,
+      "terminal": 1508,
+      "complete": 385,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 1107,
+        "complete": 385,
+        "intentional_cancel": 16
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0038-round_robin.jsonl",
+      "journal_sha256": "ea4a5dab058f1daaeaee1595558cf0439ddb8a67b8f86f7394f2a897e920ef3b",
+      "policy": "round_robin",
+      "seed": 20268020,
+      "rate": 2.184,
+      "offered": 1508,
+      "terminal": 1508,
+      "complete": 313,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 1185,
+        "complete": 313,
+        "intentional_cancel": 10
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0039-least_queue.jsonl",
+      "journal_sha256": "36517f3f478c06f97415aacd32f7654d5af6a5c099656850bb5fa82c61ce3502",
+      "policy": "least_queue",
+      "seed": 20268020,
+      "rate": 2.184,
+      "offered": 1508,
+      "terminal": 1508,
+      "complete": 363,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 1132,
+        "complete": 363,
+        "intentional_cancel": 13
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0040-cache_aware.jsonl",
+      "journal_sha256": "a89821b2811a8f2a8c4715271d7de05fedc5504422eb2da13773b11ca88fb1e4",
+      "policy": "cache_aware",
+      "seed": 20268021,
+      "rate": 1.176,
+      "offered": 808,
+      "terminal": 808,
+      "complete": 399,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 400,
+        "complete": 399,
+        "intentional_cancel": 9
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0041-cache_feedback.jsonl",
+      "journal_sha256": "75e7f20c21bf5960c6a44104e1ec4ca616bd38569193d9c5ff42f13d4ef727f5",
+      "policy": "cache_feedback",
+      "seed": 20268021,
+      "rate": 1.176,
+      "offered": 808,
+      "terminal": 808,
+      "complete": 406,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 392,
+        "complete": 406,
+        "intentional_cancel": 10
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0042-least_queue.jsonl",
+      "journal_sha256": "5f967adf34789765fbfe11ad837e445710bfaa72a3338d906d32126752fbb1cd",
+      "policy": "least_queue",
+      "seed": 20268021,
+      "rate": 1.176,
+      "offered": 808,
+      "terminal": 808,
+      "complete": 378,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 420,
+        "complete": 378,
+        "intentional_cancel": 10
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0043-round_robin.jsonl",
+      "journal_sha256": "e574924b9f5d016ba266cea2320356bf2b3fa8ffca8991862c22e59dcfd609f7",
+      "policy": "round_robin",
+      "seed": 20268021,
+      "rate": 1.176,
+      "offered": 808,
+      "terminal": 808,
+      "complete": 318,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 482,
+        "complete": 318,
+        "intentional_cancel": 8
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0044-round_robin.jsonl",
+      "journal_sha256": "6a077f4867077e4a075691b06edc41ca1059460b8bb6441830c1a8cba280beb1",
+      "policy": "round_robin",
+      "seed": 20268022,
+      "rate": 2.184,
+      "offered": 1508,
+      "terminal": 1508,
+      "complete": 327,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "complete": 327,
+        "client_overload": 1173,
+        "intentional_cancel": 8
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0045-least_queue.jsonl",
+      "journal_sha256": "e3bb6ca7a7c09b9c4e26179941a81dbb3d8cb84a59a5abbabe23d3d0e9d68739",
+      "policy": "least_queue",
+      "seed": 20268022,
+      "rate": 2.184,
+      "offered": 1508,
+      "terminal": 1508,
+      "complete": 380,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "complete": 380,
+        "client_overload": 1119,
+        "intentional_cancel": 9
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0046-cache_feedback.jsonl",
+      "journal_sha256": "96008d156f545c2995a08dff329c9ef1d3d6da8997f5ca124ef9b6af6c8586ff",
+      "policy": "cache_feedback",
+      "seed": 20268022,
+      "rate": 2.184,
+      "offered": 1508,
+      "terminal": 1508,
+      "complete": 369,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "complete": 369,
+        "client_overload": 1128,
+        "intentional_cancel": 11
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    },
+    {
+      "journal": "block-0047-cache_aware.jsonl",
+      "journal_sha256": "157f45bd69aa5b71b12ff985b209682fd71f2b7015918333b64853b88fcb5a3d",
+      "policy": "cache_aware",
+      "seed": 20268022,
+      "rate": 2.184,
+      "offered": 1508,
+      "terminal": 1508,
+      "complete": 382,
+      "incorrect_complete_tasks": 0,
+      "outcomes": {
+        "client_overload": 1115,
+        "complete": 382,
+        "intentional_cancel": 11
+      },
+      "planned_seconds": 600.0,
+      "router_pending_final": [
+        0,
+        0
+      ]
+    }
+  ]
+}

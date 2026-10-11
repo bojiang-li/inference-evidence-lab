@@ -1,0 +1,45 @@
+{
+  "args": {
+    "endpoints": [
+      "http://127.0.0.1:18081/v1",
+      "http://127.0.0.1:18082/v1"
+    ],
+    "model": "qwen3.8-flash-next-unsloth-ud-iq4_xs",
+    "lease": "retained-run/control/a-lease.json",
+    "run_id": "a-heldout-20261011",
+    "output": "retained-run/a-heldout",
+    "hours": 8.0,
+    "blocks": 0,
+    "block_seconds": 600.0,
+    "rate": 1.68,
+    "client_cap": 8,
+    "request_timeout": 120.0,
+    "output_tokens": 64,
+    "families": 4,
+    "cold_fraction": 0.2,
+    "cancel_fraction": 0.03,
+    "cache_ttl": 60.0,
+    "prefill_tokens_per_s": 1100.0,
+    "prompt_count_map": "{\"2048\":2889,\"8192\":9842}",
+    "ttft_slo": 10.0,
+    "tpot_slo": 0.15,
+    "seed": 20268011,
+    "extra_body": "",
+    "policies": [
+      "round_robin",
+      "least_queue",
+      "cache_aware",
+      "cache_feedback"
+    ]
+  },
+  "backend_models": [
+    [
+      "qwen3.8-flash-next-unsloth-ud-iq4_xs"
+    ],
+    [
+      "qwen3.8-flash-next-unsloth-ud-iq4_xs"
+    ]
+  ],
+  "created_at": 1791705295.0398884,
+  "source_sha256": "001747849623dcea5a9dbb1245e35141e960c7c898ae1246d202d5b551336e7f"
+}

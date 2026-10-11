@@ -1,0 +1,15 @@
+{
+  "cpu_tests": 48,
+  "cpu_test_result": "pass",
+  "cpu_command": "PYTHONPATH=src python3 -B -m unittest discover -s tests -v",
+  "tested_python": "3.9.6",
+  "cpu_test_scope": "Independent verification copy; local fake HTTP endpoint only. No GPU or real inference endpoints.",
+  "a_compact_recomputation": "pass",
+  "original_sources_unchanged": 12,
+  "dashboard_local_links_checked": 15,
+  "private_pattern_scan": "pass for selected text artifacts",
+  "upstream_patch_dry_run": "pass without offsets/fuzz on byte-identical current production and test files",
+  "full_upstream_pre_commit": "not_run",
+  "github_ci": "not_yet_observed",
+  "new_gpu_tests_this_publication_turn": false
+}

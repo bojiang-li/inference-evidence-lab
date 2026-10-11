@@ -1,0 +1,622 @@
+{
+  "status": "qualified_completed_8h",
+  "serving_sha256": "001747849623dcea5a9dbb1245e35141e960c7c898ae1246d202d5b551336e7f",
+  "analyzer_sha256_expected": "4cf94a0502b7d95693ce80d65bb11255975dffafabcafb5391002978403368d3",
+  "analyzer_source_verified_locally": true,
+  "protocol": {
+    "base_rate": 1.68,
+    "calibration_ramp": [
+      {
+        "offered_rate_base": 0.2,
+        "effective_nonburst_rate": 0.13999999999999999,
+        "blocks": 1,
+        "planned_seconds": 120.0,
+        "offered": 25,
+        "complete": 24,
+        "slo_pass": 12,
+        "goodput_per_planned_second": 0.1,
+        "outcomes": {
+          "complete": 24,
+          "intentional_cancel": 1
+        }
+      },
+      {
+        "offered_rate_base": 0.6,
+        "effective_nonburst_rate": 0.42,
+        "blocks": 1,
+        "planned_seconds": 120.0,
+        "offered": 61,
+        "complete": 56,
+        "slo_pass": 36,
+        "goodput_per_planned_second": 0.3,
+        "outcomes": {
+          "complete": 56,
+          "client_overload": 4,
+          "intentional_cancel": 1
+        }
+      },
+      {
+        "offered_rate_base": 1.2,
+        "effective_nonburst_rate": 0.84,
+        "blocks": 1,
+        "planned_seconds": 120.0,
+        "offered": 127,
+        "complete": 71,
+        "slo_pass": 37,
+        "goodput_per_planned_second": 0.30833333333333335,
+        "outcomes": {
+          "client_overload": 55,
+          "complete": 71,
+          "intentional_cancel": 1
+        }
+      },
+      {
+        "offered_rate_base": 2.4,
+        "effective_nonburst_rate": 1.68,
+        "blocks": 1,
+        "planned_seconds": 120.0,
+        "offered": 222,
+        "complete": 82,
+        "slo_pass": 45,
+        "goodput_per_planned_second": 0.375,
+        "outcomes": {
+          "client_overload": 137,
+          "complete": 82,
+          "intentional_cancel": 3
+        }
+      }
+    ],
+    "ttft_slo_s": 10,
+    "tpot_slo_s": 0.15,
+    "holdout_seed": 20268011,
+    "hours_requested": 8,
+    "load_levels": [
+      0.7,
+      1.3
+    ],
+    "burst_multiplier": 2,
+    "source": "retained-run/a-serving-v3/a_serving.py",
+    "selected_before_holdout": true
+  },
+  "manifest": {
+    "args": {
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "model": "qwen3.8-flash-next-unsloth-ud-iq4_xs",
+      "lease": "retained-run/control/a-lease.json",
+      "run_id": "a-heldout-20261011",
+      "output": "retained-run/a-heldout",
+      "hours": 8.0,
+      "blocks": 0,
+      "block_seconds": 600.0,
+      "rate": 1.68,
+      "client_cap": 8,
+      "request_timeout": 120.0,
+      "output_tokens": 64,
+      "families": 4,
+      "cold_fraction": 0.2,
+      "cancel_fraction": 0.03,
+      "cache_ttl": 60.0,
+      "prefill_tokens_per_s": 1100.0,
+      "prompt_count_map": "{\"2048\":2889,\"8192\":9842}",
+      "ttft_slo": 10.0,
+      "tpot_slo": 0.15,
+      "seed": 20268011,
+      "extra_body": "",
+      "policies": [
+        "round_robin",
+        "least_queue",
+        "cache_aware",
+        "cache_feedback"
+      ]
+    },
+    "backend_models": [
+      [
+        "qwen3.8-flash-next-unsloth-ud-iq4_xs"
+      ],
+      [
+        "qwen3.8-flash-next-unsloth-ud-iq4_xs"
+      ]
+    ],
+    "created_at": 1791705295.0398884,
+    "source_sha256": "001747849623dcea5a9dbb1245e35141e960c7c898ae1246d202d5b551336e7f"
+  },
+  "completion_receipt": {
+    "started_at_utc": "2026-10-11T07:54:55.009399+00:00",
+    "finished_at_utc": "2026-10-11T16:09:36.628145+00:00",
+    "exit_code": 0,
+    "analyzer_sha256": "4cf94a0502b7d95693ce80d65bb11255975dffafabcafb5391002978403368d3",
+    "duration_scope": "Coordinator elapsed wall time around actual replay subprocess; includes request drains, excludes subsequent analyzer runtime.",
+    "serving_sha256": "001747849623dcea5a9dbb1245e35141e960c7c898ae1246d202d5b551336e7f",
+    "no_completion_claim_from_alive_process": true
+  },
+  "finished_at_utc": "2026-10-11T16:09:36.628145+00:00",
+  "wall_seconds": 29681.61874604225,
+  "planned_offered_exposure_seconds_all_blocks": 28800.0,
+  "known_exact_offered_exposure_seconds_all_blocks": 28800.0,
+  "unknown_exposure_blocks": 0,
+  "non_offered_wall_overhead_seconds": 881.6187460422516,
+  "drain_seconds": null,
+  "time_scope": "Run wall minus sequential full-window exposure includes drain, setup, and interblock work; v4 does not retain block wall clocks, so drain alone is unavailable.",
+  "pending_journal_blocks": 0,
+  "truncated_or_unqualified_blocks": 0,
+  "all_policy_matched_cycles": [
+    {
+      "cycle": 0,
+      "seed": 20268011,
+      "rate": 1.176,
+      "planned_seconds_per_policy": 600.0,
+      "offered_by_policy": {
+        "round_robin": 824,
+        "least_queue": 824,
+        "cache_aware": 824,
+        "cache_feedback": 824
+      },
+      "goodput": {
+        "round_robin": 0.255,
+        "least_queue": 0.36,
+        "cache_aware": 0.335,
+        "cache_feedback": 0.33
+      }
+    },
+    {
+      "cycle": 1,
+      "seed": 20268012,
+      "rate": 2.184,
+      "planned_seconds_per_policy": 600.0,
+      "offered_by_policy": {
+        "round_robin": 1531,
+        "least_queue": 1531,
+        "cache_aware": 1531,
+        "cache_feedback": 1531
+      },
+      "goodput": {
+        "round_robin": 0.35333333333333333,
+        "least_queue": 0.25666666666666665,
+        "cache_aware": 0.295,
+        "cache_feedback": 0.32666666666666666
+      }
+    },
+    {
+      "cycle": 2,
+      "seed": 20268013,
+      "rate": 1.176,
+      "planned_seconds_per_policy": 600.0,
+      "offered_by_policy": {
+        "round_robin": 835,
+        "least_queue": 835,
+        "cache_aware": 835,
+        "cache_feedback": 835
+      },
+      "goodput": {
+        "round_robin": 0.3383333333333333,
+        "least_queue": 0.34833333333333333,
+        "cache_aware": 0.36333333333333334,
+        "cache_feedback": 0.33666666666666667
+      }
+    },
+    {
+      "cycle": 3,
+      "seed": 20268014,
+      "rate": 2.184,
+      "planned_seconds_per_policy": 600.0,
+      "offered_by_policy": {
+        "round_robin": 1557,
+        "least_queue": 1557,
+        "cache_aware": 1557,
+        "cache_feedback": 1557
+      },
+      "goodput": {
+        "round_robin": 0.2633333333333333,
+        "least_queue": 0.30333333333333334,
+        "cache_aware": 0.21,
+        "cache_feedback": 0.25166666666666665
+      }
+    },
+    {
+      "cycle": 4,
+      "seed": 20268015,
+      "rate": 1.176,
+      "planned_seconds_per_policy": 600.0,
+      "offered_by_policy": {
+        "round_robin": 791,
+        "least_queue": 791,
+        "cache_aware": 791,
+        "cache_feedback": 791
+      },
+      "goodput": {
+        "round_robin": 0.23833333333333334,
+        "least_queue": 0.3433333333333333,
+        "cache_aware": 0.33,
+        "cache_feedback": 0.34833333333333333
+      }
+    },
+    {
+      "cycle": 5,
+      "seed": 20268016,
+      "rate": 2.184,
+      "planned_seconds_per_policy": 600.0,
+      "offered_by_policy": {
+        "round_robin": 1555,
+        "least_queue": 1555,
+        "cache_aware": 1555,
+        "cache_feedback": 1555
+      },
+      "goodput": {
+        "round_robin": 0.24333333333333335,
+        "least_queue": 0.31833333333333336,
+        "cache_aware": 0.25833333333333336,
+        "cache_feedback": 0.2816666666666667
+      }
+    },
+    {
+      "cycle": 6,
+      "seed": 20268017,
+      "rate": 1.176,
+      "planned_seconds_per_policy": 600.0,
+      "offered_by_policy": {
+        "round_robin": 892,
+        "least_queue": 892,
+        "cache_aware": 892,
+        "cache_feedback": 892
+      },
+      "goodput": {
+        "round_robin": 0.25166666666666665,
+        "least_queue": 0.31333333333333335,
+        "cache_aware": 0.38333333333333336,
+        "cache_feedback": 0.31666666666666665
+      }
+    },
+    {
+      "cycle": 7,
+      "seed": 20268018,
+      "rate": 2.184,
+      "planned_seconds_per_policy": 600.0,
+      "offered_by_policy": {
+        "round_robin": 1508,
+        "least_queue": 1508,
+        "cache_aware": 1508,
+        "cache_feedback": 1508
+      },
+      "goodput": {
+        "round_robin": 0.25333333333333335,
+        "least_queue": 0.2966666666666667,
+        "cache_aware": 0.25833333333333336,
+        "cache_feedback": 0.27666666666666667
+      }
+    },
+    {
+      "cycle": 8,
+      "seed": 20268019,
+      "rate": 1.176,
+      "planned_seconds_per_policy": 600.0,
+      "offered_by_policy": {
+        "round_robin": 821,
+        "least_queue": 821,
+        "cache_aware": 821,
+        "cache_feedback": 821
+      },
+      "goodput": {
+        "round_robin": 0.28833333333333333,
+        "least_queue": 0.3466666666666667,
+        "cache_aware": 0.22166666666666668,
+        "cache_feedback": 0.295
+      }
+    },
+    {
+      "cycle": 9,
+      "seed": 20268020,
+      "rate": 2.184,
+      "planned_seconds_per_policy": 600.0,
+      "offered_by_policy": {
+        "round_robin": 1508,
+        "least_queue": 1508,
+        "cache_aware": 1508,
+        "cache_feedback": 1508
+      },
+      "goodput": {
+        "round_robin": 0.21666666666666667,
+        "least_queue": 0.28,
+        "cache_aware": 0.21833333333333332,
+        "cache_feedback": 0.31666666666666665
+      }
+    },
+    {
+      "cycle": 10,
+      "seed": 20268021,
+      "rate": 1.176,
+      "planned_seconds_per_policy": 600.0,
+      "offered_by_policy": {
+        "round_robin": 808,
+        "least_queue": 808,
+        "cache_aware": 808,
+        "cache_feedback": 808
+      },
+      "goodput": {
+        "round_robin": 0.255,
+        "least_queue": 0.3383333333333333,
+        "cache_aware": 0.33666666666666667,
+        "cache_feedback": 0.3883333333333333
+      }
+    },
+    {
+      "cycle": 11,
+      "seed": 20268022,
+      "rate": 2.184,
+      "planned_seconds_per_policy": 600.0,
+      "offered_by_policy": {
+        "round_robin": 1508,
+        "least_queue": 1508,
+        "cache_aware": 1508,
+        "cache_feedback": 1508
+      },
+      "goodput": {
+        "round_robin": 0.24666666666666667,
+        "least_queue": 0.31666666666666665,
+        "cache_aware": 0.3283333333333333,
+        "cache_feedback": 0.3
+      }
+    }
+  ],
+  "unmatched_or_unqualified_cycles": 0,
+  "policies": {
+    "cache_feedback": {
+      "blocks": 12,
+      "offered": 14138,
+      "terminal": 14138,
+      "pending": 0,
+      "complete": 4549,
+      "correct": 4549,
+      "slo_pass": 2261,
+      "planned_seconds": 7200.0,
+      "exact_exposure_seconds": 7200.0,
+      "unknown_exposure_blocks": 0,
+      "outcomes": {
+        "client_overload": 9453,
+        "complete": 4549,
+        "intentional_cancel": 136
+      },
+      "complete_wrong_quality": 0,
+      "correct_without_recorded_slo_pass": 2288,
+      "goodput_per_planned_second": 0.3140277777777778
+    },
+    "cache_aware": {
+      "blocks": 12,
+      "offered": 14138,
+      "terminal": 14138,
+      "pending": 0,
+      "complete": 4422,
+      "correct": 4422,
+      "slo_pass": 2123,
+      "planned_seconds": 7200.0,
+      "exact_exposure_seconds": 7200.0,
+      "unknown_exposure_blocks": 0,
+      "outcomes": {
+        "client_overload": 9581,
+        "complete": 4422,
+        "intentional_cancel": 135
+      },
+      "complete_wrong_quality": 0,
+      "correct_without_recorded_slo_pass": 2299,
+      "goodput_per_planned_second": 0.29486111111111113
+    },
+    "least_queue": {
+      "blocks": 12,
+      "offered": 14138,
+      "terminal": 14138,
+      "pending": 0,
+      "complete": 4505,
+      "correct": 4505,
+      "slo_pass": 2293,
+      "planned_seconds": 7200.0,
+      "exact_exposure_seconds": 7200.0,
+      "unknown_exposure_blocks": 0,
+      "outcomes": {
+        "client_overload": 9497,
+        "complete": 4505,
+        "intentional_cancel": 136
+      },
+      "complete_wrong_quality": 0,
+      "correct_without_recorded_slo_pass": 2212,
+      "goodput_per_planned_second": 0.3184722222222222
+    },
+    "round_robin": {
+      "blocks": 12,
+      "offered": 14138,
+      "terminal": 14138,
+      "pending": 0,
+      "complete": 3976,
+      "correct": 3976,
+      "slo_pass": 1922,
+      "planned_seconds": 7200.0,
+      "exact_exposure_seconds": 7200.0,
+      "unknown_exposure_blocks": 0,
+      "outcomes": {
+        "client_overload": 10039,
+        "complete": 3976,
+        "intentional_cancel": 123
+      },
+      "complete_wrong_quality": 0,
+      "correct_without_recorded_slo_pass": 2054,
+      "goodput_per_planned_second": 0.26694444444444443
+    }
+  },
+  "comparisons": [
+    {
+      "policy": "least_queue",
+      "baseline": "round_robin",
+      "v4_unadjusted_preserved": {
+        "policy": "least_queue",
+        "baseline": "round_robin",
+        "matched_complete_cycles": 12,
+        "mean_goodput_difference": 0.05152777777777778,
+        "paired_cycle_bootstrap95": [
+          0.019440972222222228,
+          0.07653124999999998
+        ],
+        "scope": "Matched cycle-level offered-load comparisons. At least3cycles for interval. Hot prefixes are matched; intended-cold namespaces differ explicitly. Sequential order/warm cache remain potential carryover."
+      },
+      "all_policy_matched_cycles": 12,
+      "matched_cycle_differences_req_per_s": [
+        0.10499999999999998,
+        -0.09666666666666668,
+        0.010000000000000009,
+        0.040000000000000036,
+        0.10499999999999998,
+        0.07500000000000001,
+        0.0616666666666667,
+        0.043333333333333335,
+        0.05833333333333335,
+        0.06333333333333335,
+        0.08333333333333331,
+        0.06999999999999998
+      ],
+      "mean_difference_req_per_s": 0.05152777777777778,
+      "bonferroni_familywise95_paired_cycle_percentile": [
+        0.01,
+        0.0798611111111111
+      ],
+      "draws": 10000,
+      "seed": 2026801103,
+      "planned_family_size": 3,
+      "tails": [
+        0.008333333333333333,
+        0.9916666666666667
+      ],
+      "by_load_level_descriptive": {
+        "1.176": {
+          "cycles": 6,
+          "mean_difference_req_per_s": 0.07055555555555555
+        },
+        "2.184": {
+          "cycles": 6,
+          "mean_difference_req_per_s": 0.03250000000000001
+        }
+      }
+    },
+    {
+      "policy": "cache_aware",
+      "baseline": "round_robin",
+      "v4_unadjusted_preserved": {
+        "policy": "cache_aware",
+        "baseline": "round_robin",
+        "matched_complete_cycles": 12,
+        "mean_goodput_difference": 0.027916666666666673,
+        "paired_cycle_bootstrap95": [
+          -0.006944444444444441,
+          0.06250347222222222
+        ],
+        "scope": "Matched cycle-level offered-load comparisons. At least3cycles for interval. Hot prefixes are matched; intended-cold namespaces differ explicitly. Sequential order/warm cache remain potential carryover."
+      },
+      "all_policy_matched_cycles": 12,
+      "matched_cycle_differences_req_per_s": [
+        0.08000000000000002,
+        -0.05833333333333335,
+        0.025000000000000022,
+        -0.053333333333333316,
+        0.09166666666666667,
+        0.015000000000000013,
+        0.1316666666666667,
+        0.0050000000000000044,
+        -0.06666666666666665,
+        0.0016666666666666496,
+        0.08166666666666667,
+        0.08166666666666664
+      ],
+      "mean_difference_req_per_s": 0.027916666666666673,
+      "bonferroni_familywise95_paired_cycle_percentile": [
+        -0.01588194444444443,
+        0.07055555555555557
+      ],
+      "draws": 10000,
+      "seed": 2026801104,
+      "planned_family_size": 3,
+      "tails": [
+        0.008333333333333333,
+        0.9916666666666667
+      ],
+      "by_load_level_descriptive": {
+        "1.176": {
+          "cycles": 6,
+          "mean_difference_req_per_s": 0.05722222222222224
+        },
+        "2.184": {
+          "cycles": 6,
+          "mean_difference_req_per_s": -0.0013888888888888933
+        }
+      }
+    },
+    {
+      "policy": "cache_feedback",
+      "baseline": "round_robin",
+      "v4_unadjusted_preserved": {
+        "policy": "cache_feedback",
+        "baseline": "round_robin",
+        "matched_complete_cycles": 12,
+        "mean_goodput_difference": 0.047083333333333324,
+        "paired_cycle_bootstrap95": [
+          0.020416666666666663,
+          0.0761145833333333
+        ],
+        "scope": "Matched cycle-level offered-load comparisons. At least3cycles for interval. Hot prefixes are matched; intended-cold namespaces differ explicitly. Sequential order/warm cache remain potential carryover."
+      },
+      "all_policy_matched_cycles": 12,
+      "matched_cycle_differences_req_per_s": [
+        0.07500000000000001,
+        -0.026666666666666672,
+        -0.0016666666666666496,
+        -0.011666666666666659,
+        0.10999999999999999,
+        0.03833333333333333,
+        0.065,
+        0.023333333333333317,
+        0.006666666666666654,
+        0.09999999999999998,
+        0.1333333333333333,
+        0.053333333333333316
+      ],
+      "mean_difference_req_per_s": 0.047083333333333324,
+      "bonferroni_familywise95_paired_cycle_percentile": [
+        0.01333333333333333,
+        0.08148263888888901
+      ],
+      "draws": 10000,
+      "seed": 2026801105,
+      "planned_family_size": 3,
+      "tails": [
+        0.008333333333333333,
+        0.9916666666666667
+      ],
+      "by_load_level_descriptive": {
+        "1.176": {
+          "cycles": 6,
+          "mean_difference_req_per_s": 0.06472222222222222
+        },
+        "2.184": {
+          "cycles": 6,
+          "mean_difference_req_per_s": 0.029444444444444436
+        }
+      }
+    }
+  ],
+  "limits": [
+    "One deployment/run; paired cycles are not independent deployment replications.",
+    "Bootstrap conditions on observed matched cycles; temporal dependence and sequential warm-cache carryover can invalidate nominal coverage.",
+    "Bonferroni percentile intervals are an approximate 95% familywise construction for exactly three planned comparisons; not a distribution-free guarantee.",
+    "Fewer than six complete cycles makes interval interpretation especially fragile; fewer than three yields no interval.",
+    "Mixed alternating low/high load levels and 2x bursts are protocol-specific; load slices are descriptive, with no additional significance claims.",
+    "Intended-cold namespaces differ by policy block, while shared prefixes and arrival seeds are matched.",
+    "Client-cap rejections and intentional cancellations remain in all offered accounting; closed-loop completion-only throughput is not reported.",
+    "Correct-without-SLO-pass includes latency and missing/invalid usage eligibility; v4 aggregates cannot isolate TTFT vs TPOT vs usage failure.",
+    "TPOT is server-token-normalized visible-output approximation; content events are not model tokens.",
+    "No post-hoc universal winner, speedup, equivalence, or production quality claim."
+  ],
+  "input_sha256": {
+    "analysis": "366444e4bae98f489ab1cef023c80ee45743a9318f0618e0616606c0abe04dbe",
+    "protocol": "de66ce4b29cad68ea5b525a29ad56f1dd0dd1e49ed1e9714a6748d7ab17c706c",
+    "manifest": "546528d73a24d31f7023436cbcea13203310a8839644321045f200e718991512",
+    "completion": "c7d72c19a73f33259ee6b9e92d5744ad20fc63edb7f7b1141cf581751b2613a5"
+  }
+}

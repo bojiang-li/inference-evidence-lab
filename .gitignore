@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+runs/
+fixture-runs/
+audit-fixture-*/
+.DS_Store

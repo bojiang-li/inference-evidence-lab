@@ -1,0 +1,122 @@
+{
+  "started_unix": 1791703434.6585667,
+  "torch": "2.13.0+cu130",
+  "scope": "Isolated empty-only metadata fix: actual complete-source producer/consumer in separate spawned processes. Names/dtypes/shapes/values and owned-copy retention checked. No model load.",
+  "rows": [
+    {
+      "variant": "fixed",
+      "case": "empty_then_scalar",
+      "round": 0,
+      "chunks": 1,
+      "received_names": [
+        "a",
+        "b"
+      ],
+      "status": "pass",
+      "retained_checked": 2,
+      "consumer_peak_bytes": 2048,
+      "wall_ms": 25.134548006462865
+    },
+    {
+      "variant": "fixed",
+      "case": "only_empty",
+      "round": 0,
+      "chunks": 1,
+      "received_names": [
+        "a"
+      ],
+      "status": "pass",
+      "retained_checked": 1,
+      "consumer_peak_bytes": 1024,
+      "wall_ms": 3.635528002632782
+    },
+    {
+      "variant": "fixed",
+      "case": "two_empty",
+      "round": 0,
+      "chunks": 1,
+      "received_names": [
+        "a",
+        "b"
+      ],
+      "status": "pass",
+      "retained_checked": 2,
+      "consumer_peak_bytes": 0,
+      "wall_ms": 3.0535370024153963
+    },
+    {
+      "variant": "fixed",
+      "case": "empty_iterator",
+      "round": 0,
+      "chunks": 0,
+      "received_names": [],
+      "status": "pass",
+      "wall_ms": 0.9289390000049025
+    },
+    {
+      "variant": "fixed",
+      "case": "retained_multichunk",
+      "round": 0,
+      "chunks": 6,
+      "received_names": [
+        "weight0",
+        "weight1",
+        "weight2",
+        "weight3",
+        "weight4",
+        "weight5",
+        "weight6",
+        "weight7",
+        "weight8",
+        "weight9",
+        "weight10",
+        "weight11"
+      ],
+      "status": "pass",
+      "retained_checked": 12,
+      "consumer_peak_bytes": 8192,
+      "wall_ms": 28.054195994627662
+    },
+    {
+      "variant": "fixed",
+      "case": "abort_after_first_chunk",
+      "round": 0,
+      "chunks": 1,
+      "received_names": [
+        "weight0",
+        "weight1"
+      ],
+      "status": "controlled_abort",
+      "retained_checked": 2,
+      "consumer_peak_bytes": 3584,
+      "wall_ms": 1.677234991802834
+    },
+    {
+      "variant": "fixed",
+      "case": "recovery_after_abort",
+      "round": 0,
+      "chunks": 6,
+      "received_names": [
+        "weight0",
+        "weight1",
+        "weight2",
+        "weight3",
+        "weight4",
+        "weight5",
+        "weight6",
+        "weight7",
+        "weight8",
+        "weight9",
+        "weight10",
+        "weight11"
+      ],
+      "status": "pass",
+      "retained_checked": 12,
+      "consumer_peak_bytes": 8192,
+      "wall_ms": 5.040296004153788
+    }
+  ],
+  "status": "completed",
+  "finished_unix": 1791703434.7604914,
+  "consumer_exitcode": 0
+}

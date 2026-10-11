@@ -1,0 +1,9 @@
+Inference Evidence Lab
+Copyright 2026 bojiang-li
+
+AI tools assisted with experiment implementation, analysis, documentation, and review preparation.
+The vLLM patch contains context from the Apache-2.0 licensed vLLM project.
+Copyright contributors to the vLLM project. Original upstream license notices still apply.
+The local interactive walkthrough was built following HumanLayer's show-me skill.
+No skill source code, model weights, native engine binaries, or third-party Python modules are bundled.
+DGX Spark, vLLM, and Strata are referenced for attribution. This project is not an official release of those projects.

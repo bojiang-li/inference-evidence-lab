@@ -1,0 +1,3374 @@
+{
+  "status": "analyzed_retained_journals",
+  "blocks": [
+    {
+      "file": "retained-run/a-heldout/block-0000-cache_feedback.jsonl",
+      "policy": "cache_feedback",
+      "seed": 20268011,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 824,
+      "terminal": 824,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 434,
+        "complete": 378,
+        "intentional_cancel": 12
+      },
+      "summary_present": true,
+      "complete": 378,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 593.176486575001,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 378,
+      "complete_with_usage": 378,
+      "complete_correct_json": 378,
+      "slo_pass": 198,
+      "goodput_per_planned_second": 0.33,
+      "arrival_ttft_median_s": 9.705089266572031,
+      "arrival_ttft_p95_s": 22.09659940440688,
+      "ttft_observed": 378,
+      "tpot_median_s": 0.016062070963796162,
+      "tpot_p95_s": 0.02455441122807055,
+      "tpot_observed": 378,
+      "cache_usage_observed": 378,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 227,
+      "slices": {
+        "target2K": {
+          "offered": 399,
+          "terminal": 399,
+          "complete": 170,
+          "slo_pass": 92
+        },
+        "target8K": {
+          "offered": 425,
+          "terminal": 425,
+          "complete": 208,
+          "slo_pass": 106
+        },
+        "intended_cold": {
+          "offered": 164,
+          "terminal": 164,
+          "complete": 76,
+          "slo_pass": 32
+        },
+        "shared": {
+          "offered": 660,
+          "terminal": 660,
+          "complete": 302,
+          "slo_pass": 166
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0001-cache_aware.jsonl",
+      "policy": "cache_aware",
+      "seed": 20268011,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 824,
+      "terminal": 824,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 438,
+        "complete": 372,
+        "intentional_cancel": 14
+      },
+      "summary_present": true,
+      "complete": 372,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 593.1767577439896,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 372,
+      "complete_with_usage": 372,
+      "complete_correct_json": 372,
+      "slo_pass": 201,
+      "goodput_per_planned_second": 0.335,
+      "arrival_ttft_median_s": 9.15962031512754,
+      "arrival_ttft_p95_s": 26.392579980623122,
+      "ttft_observed": 372,
+      "tpot_median_s": 0.016029393535323573,
+      "tpot_p95_s": 0.024533013796618826,
+      "tpot_observed": 372,
+      "cache_usage_observed": 372,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 217,
+      "slices": {
+        "target2K": {
+          "offered": 399,
+          "terminal": 399,
+          "complete": 179,
+          "slo_pass": 103
+        },
+        "target8K": {
+          "offered": 425,
+          "terminal": 425,
+          "complete": 193,
+          "slo_pass": 98
+        },
+        "intended_cold": {
+          "offered": 164,
+          "terminal": 164,
+          "complete": 79,
+          "slo_pass": 26
+        },
+        "shared": {
+          "offered": 660,
+          "terminal": 660,
+          "complete": 293,
+          "slo_pass": 175
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0002-least_queue.jsonl",
+      "policy": "least_queue",
+      "seed": 20268011,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 824,
+      "terminal": 824,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 435,
+        "complete": 374,
+        "intentional_cancel": 15
+      },
+      "summary_present": true,
+      "complete": 374,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 593.1764850850013,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 374,
+      "complete_with_usage": 374,
+      "complete_correct_json": 374,
+      "slo_pass": 216,
+      "goodput_per_planned_second": 0.36,
+      "arrival_ttft_median_s": 9.21453233090142,
+      "arrival_ttft_p95_s": 24.42884207848835,
+      "ttft_observed": 374,
+      "tpot_median_s": 0.016014912428675285,
+      "tpot_p95_s": 0.024498455653987807,
+      "tpot_observed": 374,
+      "cache_usage_observed": 374,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 229,
+      "slices": {
+        "target2K": {
+          "offered": 399,
+          "terminal": 399,
+          "complete": 175,
+          "slo_pass": 108
+        },
+        "target8K": {
+          "offered": 425,
+          "terminal": 425,
+          "complete": 199,
+          "slo_pass": 108
+        },
+        "intended_cold": {
+          "offered": 164,
+          "terminal": 164,
+          "complete": 69,
+          "slo_pass": 24
+        },
+        "shared": {
+          "offered": 660,
+          "terminal": 660,
+          "complete": 305,
+          "slo_pass": 192
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0003-round_robin.jsonl",
+      "policy": "round_robin",
+      "seed": 20268011,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 824,
+      "terminal": 824,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 502,
+        "complete": 311,
+        "intentional_cancel": 11
+      },
+      "summary_present": true,
+      "complete": 311,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 593.1760806940001,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 311,
+      "complete_with_usage": 311,
+      "complete_correct_json": 311,
+      "slo_pass": 153,
+      "goodput_per_planned_second": 0.255,
+      "arrival_ttft_median_s": 10.364811957319034,
+      "arrival_ttft_p95_s": 34.865775072961696,
+      "ttft_observed": 311,
+      "tpot_median_s": 0.016043461427865884,
+      "tpot_p95_s": 0.024495180178616596,
+      "tpot_observed": 311,
+      "cache_usage_observed": 311,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 183,
+      "slices": {
+        "target2K": {
+          "offered": 399,
+          "terminal": 399,
+          "complete": 151,
+          "slo_pass": 79
+        },
+        "target8K": {
+          "offered": 425,
+          "terminal": 425,
+          "complete": 160,
+          "slo_pass": 74
+        },
+        "intended_cold": {
+          "offered": 164,
+          "terminal": 164,
+          "complete": 58,
+          "slo_pass": 22
+        },
+        "shared": {
+          "offered": 660,
+          "terminal": 660,
+          "complete": 253,
+          "slo_pass": 131
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0004-round_robin.jsonl",
+      "policy": "round_robin",
+      "seed": 20268012,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1531,
+      "terminal": 1531,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 1122,
+        "complete": 391,
+        "intentional_cancel": 18
+      },
+      "summary_present": true,
+      "complete": 391,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.9546058569977,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 391,
+      "complete_with_usage": 391,
+      "complete_correct_json": 391,
+      "slo_pass": 212,
+      "goodput_per_planned_second": 0.35333333333333333,
+      "arrival_ttft_median_s": 9.206933019144344,
+      "arrival_ttft_p95_s": 32.1576790497129,
+      "ttft_observed": 391,
+      "tpot_median_s": 0.016031836286336847,
+      "tpot_p95_s": 0.024586888856512293,
+      "tpot_observed": 391,
+      "cache_usage_observed": 391,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 267,
+      "slices": {
+        "target2K": {
+          "offered": 763,
+          "terminal": 763,
+          "complete": 200,
+          "slo_pass": 113
+        },
+        "target8K": {
+          "offered": 768,
+          "terminal": 768,
+          "complete": 191,
+          "slo_pass": 99
+        },
+        "intended_cold": {
+          "offered": 278,
+          "terminal": 278,
+          "complete": 53,
+          "slo_pass": 16
+        },
+        "shared": {
+          "offered": 1253,
+          "terminal": 1253,
+          "complete": 338,
+          "slo_pass": 196
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0005-cache_feedback.jsonl",
+      "policy": "cache_feedback",
+      "seed": 20268012,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1531,
+      "terminal": 1531,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "complete": 399,
+        "client_overload": 1121,
+        "intentional_cancel": 11
+      },
+      "summary_present": true,
+      "complete": 399,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.9545564839937,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 399,
+      "complete_with_usage": 399,
+      "complete_correct_json": 399,
+      "slo_pass": 196,
+      "goodput_per_planned_second": 0.32666666666666666,
+      "arrival_ttft_median_s": 10.185378296824638,
+      "arrival_ttft_p95_s": 23.755556437297486,
+      "ttft_observed": 399,
+      "tpot_median_s": 0.016039483714848757,
+      "tpot_p95_s": 0.024573603349771083,
+      "tpot_observed": 399,
+      "cache_usage_observed": 399,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 249,
+      "slices": {
+        "target2K": {
+          "offered": 763,
+          "terminal": 763,
+          "complete": 202,
+          "slo_pass": 106
+        },
+        "target8K": {
+          "offered": 768,
+          "terminal": 768,
+          "complete": 197,
+          "slo_pass": 90
+        },
+        "intended_cold": {
+          "offered": 278,
+          "terminal": 278,
+          "complete": 67,
+          "slo_pass": 11
+        },
+        "shared": {
+          "offered": 1253,
+          "terminal": 1253,
+          "complete": 332,
+          "slo_pass": 185
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0006-least_queue.jsonl",
+      "policy": "least_queue",
+      "seed": 20268012,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1531,
+      "terminal": 1531,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 1161,
+        "complete": 360,
+        "intentional_cancel": 10
+      },
+      "summary_present": true,
+      "complete": 360,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.9545999370021,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 360,
+      "complete_with_usage": 360,
+      "complete_correct_json": 360,
+      "slo_pass": 154,
+      "goodput_per_planned_second": 0.25666666666666665,
+      "arrival_ttft_median_s": 11.992200912543922,
+      "arrival_ttft_p95_s": 24.12846261524831,
+      "ttft_observed": 360,
+      "tpot_median_s": 0.016039224642424542,
+      "tpot_p95_s": 0.024515539885656575,
+      "tpot_observed": 360,
+      "cache_usage_observed": 360,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 197,
+      "slices": {
+        "target2K": {
+          "offered": 763,
+          "terminal": 763,
+          "complete": 194,
+          "slo_pass": 98
+        },
+        "target8K": {
+          "offered": 768,
+          "terminal": 768,
+          "complete": 166,
+          "slo_pass": 56
+        },
+        "intended_cold": {
+          "offered": 278,
+          "terminal": 278,
+          "complete": 75,
+          "slo_pass": 21
+        },
+        "shared": {
+          "offered": 1253,
+          "terminal": 1253,
+          "complete": 285,
+          "slo_pass": 133
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0007-cache_aware.jsonl",
+      "policy": "cache_aware",
+      "seed": 20268012,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1531,
+      "terminal": 1531,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 1137,
+        "complete": 381,
+        "intentional_cancel": 13
+      },
+      "summary_present": true,
+      "complete": 381,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.9553435029957,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 381,
+      "complete_with_usage": 381,
+      "complete_correct_json": 381,
+      "slo_pass": 177,
+      "goodput_per_planned_second": 0.295,
+      "arrival_ttft_median_s": 11.049874331205501,
+      "arrival_ttft_p95_s": 26.322397538955556,
+      "ttft_observed": 381,
+      "tpot_median_s": 0.016012753928537547,
+      "tpot_p95_s": 0.024532655571030255,
+      "tpot_observed": 381,
+      "cache_usage_observed": 381,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 234,
+      "slices": {
+        "target2K": {
+          "offered": 763,
+          "terminal": 763,
+          "complete": 186,
+          "slo_pass": 97
+        },
+        "target8K": {
+          "offered": 768,
+          "terminal": 768,
+          "complete": 195,
+          "slo_pass": 80
+        },
+        "intended_cold": {
+          "offered": 278,
+          "terminal": 278,
+          "complete": 70,
+          "slo_pass": 19
+        },
+        "shared": {
+          "offered": 1253,
+          "terminal": 1253,
+          "complete": 311,
+          "slo_pass": 158
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0008-cache_feedback.jsonl",
+      "policy": "cache_feedback",
+      "seed": 20268013,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 835,
+      "terminal": 835,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 439,
+        "complete": 387,
+        "intentional_cancel": 9
+      },
+      "summary_present": true,
+      "complete": 387,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.4419175410003,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 387,
+      "complete_with_usage": 387,
+      "complete_correct_json": 387,
+      "slo_pass": 202,
+      "goodput_per_planned_second": 0.33666666666666667,
+      "arrival_ttft_median_s": 9.767356817916152,
+      "arrival_ttft_p95_s": 22.538374508857668,
+      "ttft_observed": 387,
+      "tpot_median_s": 0.01602735678586344,
+      "tpot_p95_s": 0.024557471785478163,
+      "tpot_observed": 387,
+      "cache_usage_observed": 387,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 237,
+      "slices": {
+        "target2K": {
+          "offered": 405,
+          "terminal": 405,
+          "complete": 180,
+          "slo_pass": 111
+        },
+        "target8K": {
+          "offered": 430,
+          "terminal": 430,
+          "complete": 207,
+          "slo_pass": 91
+        },
+        "intended_cold": {
+          "offered": 167,
+          "terminal": 167,
+          "complete": 78,
+          "slo_pass": 25
+        },
+        "shared": {
+          "offered": 668,
+          "terminal": 668,
+          "complete": 309,
+          "slo_pass": 177
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0009-round_robin.jsonl",
+      "policy": "round_robin",
+      "seed": 20268013,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 835,
+      "terminal": 835,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 472,
+        "complete": 353,
+        "intentional_cancel": 10
+      },
+      "summary_present": true,
+      "complete": 353,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.4420693669963,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 353,
+      "complete_with_usage": 353,
+      "complete_correct_json": 353,
+      "slo_pass": 203,
+      "goodput_per_planned_second": 0.3383333333333333,
+      "arrival_ttft_median_s": 8.011108368111309,
+      "arrival_ttft_p95_s": 32.51366402828716,
+      "ttft_observed": 353,
+      "tpot_median_s": 0.01603863321361132,
+      "tpot_p95_s": 0.024555985214205326,
+      "tpot_observed": 353,
+      "cache_usage_observed": 353,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 227,
+      "slices": {
+        "target2K": {
+          "offered": 405,
+          "terminal": 405,
+          "complete": 177,
+          "slo_pass": 109
+        },
+        "target8K": {
+          "offered": 430,
+          "terminal": 430,
+          "complete": 176,
+          "slo_pass": 94
+        },
+        "intended_cold": {
+          "offered": 167,
+          "terminal": 167,
+          "complete": 65,
+          "slo_pass": 24
+        },
+        "shared": {
+          "offered": 668,
+          "terminal": 668,
+          "complete": 288,
+          "slo_pass": 179
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0010-least_queue.jsonl",
+      "policy": "least_queue",
+      "seed": 20268013,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 835,
+      "terminal": 835,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 438,
+        "complete": 384,
+        "intentional_cancel": 13
+      },
+      "summary_present": true,
+      "complete": 384,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.4417284079973,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 384,
+      "complete_with_usage": 384,
+      "complete_correct_json": 384,
+      "slo_pass": 209,
+      "goodput_per_planned_second": 0.34833333333333333,
+      "arrival_ttft_median_s": 9.66156962979585,
+      "arrival_ttft_p95_s": 23.537932093157707,
+      "ttft_observed": 384,
+      "tpot_median_s": 0.01602746864279782,
+      "tpot_p95_s": 0.024590909632180618,
+      "tpot_observed": 384,
+      "cache_usage_observed": 384,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 232,
+      "slices": {
+        "target2K": {
+          "offered": 405,
+          "terminal": 405,
+          "complete": 192,
+          "slo_pass": 113
+        },
+        "target8K": {
+          "offered": 430,
+          "terminal": 430,
+          "complete": 192,
+          "slo_pass": 96
+        },
+        "intended_cold": {
+          "offered": 167,
+          "terminal": 167,
+          "complete": 72,
+          "slo_pass": 22
+        },
+        "shared": {
+          "offered": 668,
+          "terminal": 668,
+          "complete": 312,
+          "slo_pass": 187
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0011-cache_aware.jsonl",
+      "policy": "cache_aware",
+      "seed": 20268013,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 835,
+      "terminal": 835,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 435,
+        "complete": 388,
+        "intentional_cancel": 12
+      },
+      "summary_present": true,
+      "complete": 388,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.4413880419888,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 388,
+      "complete_with_usage": 388,
+      "complete_correct_json": 388,
+      "slo_pass": 218,
+      "goodput_per_planned_second": 0.36333333333333334,
+      "arrival_ttft_median_s": 8.600382254364376,
+      "arrival_ttft_p95_s": 24.127182417557197,
+      "ttft_observed": 388,
+      "tpot_median_s": 0.016031197535734724,
+      "tpot_p95_s": 0.024634346024946092,
+      "tpot_observed": 388,
+      "cache_usage_observed": 388,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 231,
+      "slices": {
+        "target2K": {
+          "offered": 405,
+          "terminal": 405,
+          "complete": 185,
+          "slo_pass": 103
+        },
+        "target8K": {
+          "offered": 430,
+          "terminal": 430,
+          "complete": 203,
+          "slo_pass": 115
+        },
+        "intended_cold": {
+          "offered": 167,
+          "terminal": 167,
+          "complete": 74,
+          "slo_pass": 21
+        },
+        "shared": {
+          "offered": 668,
+          "terminal": 668,
+          "complete": 314,
+          "slo_pass": 197
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0012-round_robin.jsonl",
+      "policy": "round_robin",
+      "seed": 20268014,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1557,
+      "terminal": 1557,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 1213,
+        "complete": 328,
+        "intentional_cancel": 16
+      },
+      "summary_present": true,
+      "complete": 328,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.6058814100106,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 328,
+      "complete_with_usage": 328,
+      "complete_correct_json": 328,
+      "slo_pass": 158,
+      "goodput_per_planned_second": 0.2633333333333333,
+      "arrival_ttft_median_s": 10.576616561986157,
+      "arrival_ttft_p95_s": 33.95865653694345,
+      "ttft_observed": 328,
+      "tpot_median_s": 0.016036046321200308,
+      "tpot_p95_s": 0.024618075603991332,
+      "tpot_observed": 328,
+      "cache_usage_observed": 328,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 188,
+      "slices": {
+        "target2K": {
+          "offered": 790,
+          "terminal": 790,
+          "complete": 172,
+          "slo_pass": 94
+        },
+        "target8K": {
+          "offered": 767,
+          "terminal": 767,
+          "complete": 156,
+          "slo_pass": 64
+        },
+        "intended_cold": {
+          "offered": 303,
+          "terminal": 303,
+          "complete": 68,
+          "slo_pass": 27
+        },
+        "shared": {
+          "offered": 1254,
+          "terminal": 1254,
+          "complete": 260,
+          "slo_pass": 131
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0013-cache_aware.jsonl",
+      "policy": "cache_aware",
+      "seed": 20268014,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1557,
+      "terminal": 1557,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 1213,
+        "complete": 334,
+        "intentional_cancel": 10
+      },
+      "summary_present": true,
+      "complete": 334,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.6055335580022,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 334,
+      "complete_with_usage": 334,
+      "complete_correct_json": 334,
+      "slo_pass": 126,
+      "goodput_per_planned_second": 0.21,
+      "arrival_ttft_median_s": 12.321142001870612,
+      "arrival_ttft_p95_s": 28.31438359274106,
+      "ttft_observed": 334,
+      "tpot_median_s": 0.016062046785269297,
+      "tpot_p95_s": 0.02463679543190145,
+      "tpot_observed": 334,
+      "cache_usage_observed": 334,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 178,
+      "slices": {
+        "target2K": {
+          "offered": 790,
+          "terminal": 790,
+          "complete": 151,
+          "slo_pass": 59
+        },
+        "target8K": {
+          "offered": 767,
+          "terminal": 767,
+          "complete": 183,
+          "slo_pass": 67
+        },
+        "intended_cold": {
+          "offered": 303,
+          "terminal": 303,
+          "complete": 78,
+          "slo_pass": 20
+        },
+        "shared": {
+          "offered": 1254,
+          "terminal": 1254,
+          "complete": 256,
+          "slo_pass": 106
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0014-least_queue.jsonl",
+      "policy": "least_queue",
+      "seed": 20268014,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1557,
+      "terminal": 1557,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 1177,
+        "complete": 369,
+        "intentional_cancel": 11
+      },
+      "summary_present": true,
+      "complete": 369,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.6055795969878,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 369,
+      "complete_with_usage": 369,
+      "complete_correct_json": 369,
+      "slo_pass": 182,
+      "goodput_per_planned_second": 0.30333333333333334,
+      "arrival_ttft_median_s": 10.088830074091675,
+      "arrival_ttft_p95_s": 26.693723068942177,
+      "ttft_observed": 369,
+      "tpot_median_s": 0.01603493385690464,
+      "tpot_p95_s": 0.02461967482855211,
+      "tpot_observed": 369,
+      "cache_usage_observed": 369,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 221,
+      "slices": {
+        "target2K": {
+          "offered": 790,
+          "terminal": 790,
+          "complete": 190,
+          "slo_pass": 102
+        },
+        "target8K": {
+          "offered": 767,
+          "terminal": 767,
+          "complete": 179,
+          "slo_pass": 80
+        },
+        "intended_cold": {
+          "offered": 303,
+          "terminal": 303,
+          "complete": 70,
+          "slo_pass": 23
+        },
+        "shared": {
+          "offered": 1254,
+          "terminal": 1254,
+          "complete": 299,
+          "slo_pass": 159
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0015-cache_feedback.jsonl",
+      "policy": "cache_feedback",
+      "seed": 20268014,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1557,
+      "terminal": 1557,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 1187,
+        "complete": 361,
+        "intentional_cancel": 9
+      },
+      "summary_present": true,
+      "complete": 361,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.6053454679932,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 361,
+      "complete_with_usage": 361,
+      "complete_correct_json": 361,
+      "slo_pass": 151,
+      "goodput_per_planned_second": 0.25166666666666665,
+      "arrival_ttft_median_s": 11.888097205082886,
+      "arrival_ttft_p95_s": 26.160115589620546,
+      "ttft_observed": 361,
+      "tpot_median_s": 0.016022696714831648,
+      "tpot_p95_s": 0.024592571214140792,
+      "tpot_observed": 361,
+      "cache_usage_observed": 361,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 211,
+      "slices": {
+        "target2K": {
+          "offered": 790,
+          "terminal": 790,
+          "complete": 179,
+          "slo_pass": 88
+        },
+        "target8K": {
+          "offered": 767,
+          "terminal": 767,
+          "complete": 182,
+          "slo_pass": 63
+        },
+        "intended_cold": {
+          "offered": 303,
+          "terminal": 303,
+          "complete": 60,
+          "slo_pass": 20
+        },
+        "shared": {
+          "offered": 1254,
+          "terminal": 1254,
+          "complete": 301,
+          "slo_pass": 131
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0016-least_queue.jsonl",
+      "policy": "least_queue",
+      "seed": 20268015,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 791,
+      "terminal": 791,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "complete": 377,
+        "client_overload": 404,
+        "intentional_cancel": 10
+      },
+      "summary_present": true,
+      "complete": 377,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 598.2971269309928,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 377,
+      "complete_with_usage": 377,
+      "complete_correct_json": 377,
+      "slo_pass": 206,
+      "goodput_per_planned_second": 0.3433333333333333,
+      "arrival_ttft_median_s": 9.511585947548156,
+      "arrival_ttft_p95_s": 23.322090679875682,
+      "ttft_observed": 377,
+      "tpot_median_s": 0.01603257392915631,
+      "tpot_p95_s": 0.024560625799391087,
+      "tpot_observed": 377,
+      "cache_usage_observed": 377,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 229,
+      "slices": {
+        "target2K": {
+          "offered": 389,
+          "terminal": 389,
+          "complete": 189,
+          "slo_pass": 118
+        },
+        "target8K": {
+          "offered": 402,
+          "terminal": 402,
+          "complete": 188,
+          "slo_pass": 88
+        },
+        "intended_cold": {
+          "offered": 139,
+          "terminal": 139,
+          "complete": 70,
+          "slo_pass": 26
+        },
+        "shared": {
+          "offered": 652,
+          "terminal": 652,
+          "complete": 307,
+          "slo_pass": 180
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0017-cache_aware.jsonl",
+      "policy": "cache_aware",
+      "seed": 20268015,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 791,
+      "terminal": 791,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "complete": 381,
+        "client_overload": 399,
+        "intentional_cancel": 11
+      },
+      "summary_present": true,
+      "complete": 381,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 598.2968756790069,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 381,
+      "complete_with_usage": 381,
+      "complete_correct_json": 381,
+      "slo_pass": 198,
+      "goodput_per_planned_second": 0.33,
+      "arrival_ttft_median_s": 9.513324187806575,
+      "arrival_ttft_p95_s": 24.332217910297913,
+      "ttft_observed": 381,
+      "tpot_median_s": 0.016080490499526996,
+      "tpot_p95_s": 0.024665391499833537,
+      "tpot_observed": 381,
+      "cache_usage_observed": 381,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 238,
+      "slices": {
+        "target2K": {
+          "offered": 389,
+          "terminal": 389,
+          "complete": 191,
+          "slo_pass": 116
+        },
+        "target8K": {
+          "offered": 402,
+          "terminal": 402,
+          "complete": 190,
+          "slo_pass": 82
+        },
+        "intended_cold": {
+          "offered": 139,
+          "terminal": 139,
+          "complete": 66,
+          "slo_pass": 17
+        },
+        "shared": {
+          "offered": 652,
+          "terminal": 652,
+          "complete": 315,
+          "slo_pass": 181
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0018-round_robin.jsonl",
+      "policy": "round_robin",
+      "seed": 20268015,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 791,
+      "terminal": 791,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "complete": 340,
+        "client_overload": 444,
+        "intentional_cancel": 7
+      },
+      "summary_present": true,
+      "complete": 340,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 598.2972728419991,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 340,
+      "complete_with_usage": 340,
+      "complete_correct_json": 340,
+      "slo_pass": 143,
+      "goodput_per_planned_second": 0.23833333333333334,
+      "arrival_ttft_median_s": 12.125485634926008,
+      "arrival_ttft_p95_s": 28.66783063542389,
+      "ttft_observed": 340,
+      "tpot_median_s": 0.016063336893109535,
+      "tpot_p95_s": 0.024587995761664518,
+      "tpot_observed": 340,
+      "cache_usage_observed": 340,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 203,
+      "slices": {
+        "target2K": {
+          "offered": 389,
+          "terminal": 389,
+          "complete": 156,
+          "slo_pass": 77
+        },
+        "target8K": {
+          "offered": 402,
+          "terminal": 402,
+          "complete": 184,
+          "slo_pass": 66
+        },
+        "intended_cold": {
+          "offered": 139,
+          "terminal": 139,
+          "complete": 62,
+          "slo_pass": 17
+        },
+        "shared": {
+          "offered": 652,
+          "terminal": 652,
+          "complete": 278,
+          "slo_pass": 126
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0019-cache_feedback.jsonl",
+      "policy": "cache_feedback",
+      "seed": 20268015,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 791,
+      "terminal": 791,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "complete": 389,
+        "client_overload": 392,
+        "intentional_cancel": 10
+      },
+      "summary_present": true,
+      "complete": 389,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 598.2966831490048,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 389,
+      "complete_with_usage": 389,
+      "complete_correct_json": 389,
+      "slo_pass": 209,
+      "goodput_per_planned_second": 0.34833333333333333,
+      "arrival_ttft_median_s": 9.36502777998976,
+      "arrival_ttft_p95_s": 24.4954063539888,
+      "ttft_observed": 389,
+      "tpot_median_s": 0.01603969085720434,
+      "tpot_p95_s": 0.024558885843102223,
+      "tpot_observed": 389,
+      "cache_usage_observed": 389,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 245,
+      "slices": {
+        "target2K": {
+          "offered": 389,
+          "terminal": 389,
+          "complete": 193,
+          "slo_pass": 117
+        },
+        "target8K": {
+          "offered": 402,
+          "terminal": 402,
+          "complete": 196,
+          "slo_pass": 92
+        },
+        "intended_cold": {
+          "offered": 139,
+          "terminal": 139,
+          "complete": 68,
+          "slo_pass": 26
+        },
+        "shared": {
+          "offered": 652,
+          "terminal": 652,
+          "complete": 321,
+          "slo_pass": 183
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0020-round_robin.jsonl",
+      "policy": "round_robin",
+      "seed": 20268016,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1555,
+      "terminal": 1555,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 1221,
+        "complete": 323,
+        "intentional_cancel": 11
+      },
+      "summary_present": true,
+      "complete": 323,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.2932117259916,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 323,
+      "complete_with_usage": 323,
+      "complete_correct_json": 323,
+      "slo_pass": 146,
+      "goodput_per_planned_second": 0.24333333333333335,
+      "arrival_ttft_median_s": 12.1025503576966,
+      "arrival_ttft_p95_s": 32.679544636566426,
+      "ttft_observed": 323,
+      "tpot_median_s": 0.016073125785624143,
+      "tpot_p95_s": 0.0246610913499483,
+      "tpot_observed": 323,
+      "cache_usage_observed": 323,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 185,
+      "slices": {
+        "target2K": {
+          "offered": 778,
+          "terminal": 778,
+          "complete": 169,
+          "slo_pass": 87
+        },
+        "target8K": {
+          "offered": 777,
+          "terminal": 777,
+          "complete": 154,
+          "slo_pass": 59
+        },
+        "intended_cold": {
+          "offered": 281,
+          "terminal": 281,
+          "complete": 65,
+          "slo_pass": 22
+        },
+        "shared": {
+          "offered": 1274,
+          "terminal": 1274,
+          "complete": 258,
+          "slo_pass": 124
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0021-cache_aware.jsonl",
+      "policy": "cache_aware",
+      "seed": 20268016,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1555,
+      "terminal": 1555,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 1192,
+        "complete": 354,
+        "intentional_cancel": 9
+      },
+      "summary_present": true,
+      "complete": 354,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.2930427309911,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 354,
+      "complete_with_usage": 354,
+      "complete_correct_json": 354,
+      "slo_pass": 155,
+      "goodput_per_planned_second": 0.25833333333333336,
+      "arrival_ttft_median_s": 11.022002710378729,
+      "arrival_ttft_p95_s": 31.014923346548287,
+      "ttft_observed": 354,
+      "tpot_median_s": 0.01602210642886348,
+      "tpot_p95_s": 0.024610654470857946,
+      "tpot_observed": 354,
+      "cache_usage_observed": 354,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 200,
+      "slices": {
+        "target2K": {
+          "offered": 778,
+          "terminal": 778,
+          "complete": 170,
+          "slo_pass": 98
+        },
+        "target8K": {
+          "offered": 777,
+          "terminal": 777,
+          "complete": 184,
+          "slo_pass": 57
+        },
+        "intended_cold": {
+          "offered": 281,
+          "terminal": 281,
+          "complete": 79,
+          "slo_pass": 24
+        },
+        "shared": {
+          "offered": 1274,
+          "terminal": 1274,
+          "complete": 275,
+          "slo_pass": 131
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0022-least_queue.jsonl",
+      "policy": "least_queue",
+      "seed": 20268016,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1555,
+      "terminal": 1555,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 1155,
+        "complete": 384,
+        "intentional_cancel": 16
+      },
+      "summary_present": true,
+      "complete": 384,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.2936066340044,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 384,
+      "complete_with_usage": 384,
+      "complete_correct_json": 384,
+      "slo_pass": 191,
+      "goodput_per_planned_second": 0.31833333333333336,
+      "arrival_ttft_median_s": 10.02263557612605,
+      "arrival_ttft_p95_s": 23.517542136864357,
+      "ttft_observed": 384,
+      "tpot_median_s": 0.016002928821503053,
+      "tpot_p95_s": 0.024523786846423586,
+      "tpot_observed": 384,
+      "cache_usage_observed": 384,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 241,
+      "slices": {
+        "target2K": {
+          "offered": 778,
+          "terminal": 778,
+          "complete": 183,
+          "slo_pass": 100
+        },
+        "target8K": {
+          "offered": 777,
+          "terminal": 777,
+          "complete": 201,
+          "slo_pass": 91
+        },
+        "intended_cold": {
+          "offered": 281,
+          "terminal": 281,
+          "complete": 69,
+          "slo_pass": 18
+        },
+        "shared": {
+          "offered": 1274,
+          "terminal": 1274,
+          "complete": 315,
+          "slo_pass": 173
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0023-cache_feedback.jsonl",
+      "policy": "cache_feedback",
+      "seed": 20268016,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1555,
+      "terminal": 1555,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 1175,
+        "complete": 367,
+        "intentional_cancel": 13
+      },
+      "summary_present": true,
+      "complete": 367,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.2929642850067,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 367,
+      "complete_with_usage": 367,
+      "complete_correct_json": 367,
+      "slo_pass": 169,
+      "goodput_per_planned_second": 0.2816666666666667,
+      "arrival_ttft_median_s": 10.642236957646674,
+      "arrival_ttft_p95_s": 29.976114284427602,
+      "ttft_observed": 367,
+      "tpot_median_s": 0.01603190021393987,
+      "tpot_p95_s": 0.024655125199829594,
+      "tpot_observed": 367,
+      "cache_usage_observed": 367,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 222,
+      "slices": {
+        "target2K": {
+          "offered": 778,
+          "terminal": 778,
+          "complete": 176,
+          "slo_pass": 97
+        },
+        "target8K": {
+          "offered": 777,
+          "terminal": 777,
+          "complete": 191,
+          "slo_pass": 72
+        },
+        "intended_cold": {
+          "offered": 281,
+          "terminal": 281,
+          "complete": 71,
+          "slo_pass": 18
+        },
+        "shared": {
+          "offered": 1274,
+          "terminal": 1274,
+          "complete": 296,
+          "slo_pass": 151
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0024-cache_feedback.jsonl",
+      "policy": "cache_feedback",
+      "seed": 20268017,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 892,
+      "terminal": 892,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 511,
+        "complete": 365,
+        "intentional_cancel": 16
+      },
+      "summary_present": true,
+      "complete": 365,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.214228908997,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 365,
+      "complete_with_usage": 365,
+      "complete_correct_json": 365,
+      "slo_pass": 190,
+      "goodput_per_planned_second": 0.31666666666666665,
+      "arrival_ttft_median_s": 9.114387847992475,
+      "arrival_ttft_p95_s": 24.577989308396354,
+      "ttft_observed": 365,
+      "tpot_median_s": 0.016034212000834356,
+      "tpot_p95_s": 0.024686980642686,
+      "tpot_observed": 365,
+      "cache_usage_observed": 365,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 208,
+      "slices": {
+        "target2K": {
+          "offered": 455,
+          "terminal": 455,
+          "complete": 182,
+          "slo_pass": 108
+        },
+        "target8K": {
+          "offered": 437,
+          "terminal": 437,
+          "complete": 183,
+          "slo_pass": 82
+        },
+        "intended_cold": {
+          "offered": 183,
+          "terminal": 183,
+          "complete": 88,
+          "slo_pass": 30
+        },
+        "shared": {
+          "offered": 709,
+          "terminal": 709,
+          "complete": 277,
+          "slo_pass": 160
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0025-round_robin.jsonl",
+      "policy": "round_robin",
+      "seed": 20268017,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 892,
+      "terminal": 892,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 567,
+        "complete": 316,
+        "intentional_cancel": 9
+      },
+      "summary_present": true,
+      "complete": 316,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.2139616860077,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 316,
+      "complete_with_usage": 316,
+      "complete_correct_json": 316,
+      "slo_pass": 151,
+      "goodput_per_planned_second": 0.25166666666666665,
+      "arrival_ttft_median_s": 11.286577082697477,
+      "arrival_ttft_p95_s": 37.447259900425706,
+      "ttft_observed": 316,
+      "tpot_median_s": 0.016047568999575948,
+      "tpot_p95_s": 0.024608729731750958,
+      "tpot_observed": 316,
+      "cache_usage_observed": 316,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 187,
+      "slices": {
+        "target2K": {
+          "offered": 455,
+          "terminal": 455,
+          "complete": 163,
+          "slo_pass": 85
+        },
+        "target8K": {
+          "offered": 437,
+          "terminal": 437,
+          "complete": 153,
+          "slo_pass": 66
+        },
+        "intended_cold": {
+          "offered": 183,
+          "terminal": 183,
+          "complete": 63,
+          "slo_pass": 23
+        },
+        "shared": {
+          "offered": 709,
+          "terminal": 709,
+          "complete": 253,
+          "slo_pass": 128
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0026-cache_aware.jsonl",
+      "policy": "cache_aware",
+      "seed": 20268017,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 892,
+      "terminal": 892,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 485,
+        "complete": 392,
+        "intentional_cancel": 15
+      },
+      "summary_present": true,
+      "complete": 392,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.2142510749982,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 392,
+      "complete_with_usage": 392,
+      "complete_correct_json": 392,
+      "slo_pass": 230,
+      "goodput_per_planned_second": 0.38333333333333336,
+      "arrival_ttft_median_s": 8.004044776775117,
+      "arrival_ttft_p95_s": 24.231531473501672,
+      "ttft_observed": 392,
+      "tpot_median_s": 0.01602525528557765,
+      "tpot_p95_s": 0.02460037103898815,
+      "tpot_observed": 392,
+      "cache_usage_observed": 392,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 247,
+      "slices": {
+        "target2K": {
+          "offered": 455,
+          "terminal": 455,
+          "complete": 200,
+          "slo_pass": 136
+        },
+        "target8K": {
+          "offered": 437,
+          "terminal": 437,
+          "complete": 192,
+          "slo_pass": 94
+        },
+        "intended_cold": {
+          "offered": 183,
+          "terminal": 183,
+          "complete": 83,
+          "slo_pass": 28
+        },
+        "shared": {
+          "offered": 709,
+          "terminal": 709,
+          "complete": 309,
+          "slo_pass": 202
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0027-least_queue.jsonl",
+      "policy": "least_queue",
+      "seed": 20268017,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 892,
+      "terminal": 892,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 522,
+        "complete": 361,
+        "intentional_cancel": 9
+      },
+      "summary_present": true,
+      "complete": 361,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.2139787859924,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 361,
+      "complete_with_usage": 361,
+      "complete_correct_json": 361,
+      "slo_pass": 188,
+      "goodput_per_planned_second": 0.31333333333333335,
+      "arrival_ttft_median_s": 9.73882368709019,
+      "arrival_ttft_p95_s": 26.524143391041434,
+      "ttft_observed": 361,
+      "tpot_median_s": 0.016009592429327313,
+      "tpot_p95_s": 0.02458370121478635,
+      "tpot_observed": 361,
+      "cache_usage_observed": 361,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 206,
+      "slices": {
+        "target2K": {
+          "offered": 455,
+          "terminal": 455,
+          "complete": 192,
+          "slo_pass": 109
+        },
+        "target8K": {
+          "offered": 437,
+          "terminal": 437,
+          "complete": 169,
+          "slo_pass": 79
+        },
+        "intended_cold": {
+          "offered": 183,
+          "terminal": 183,
+          "complete": 74,
+          "slo_pass": 24
+        },
+        "shared": {
+          "offered": 709,
+          "terminal": 709,
+          "complete": 287,
+          "slo_pass": 164
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0028-least_queue.jsonl",
+      "policy": "least_queue",
+      "seed": 20268018,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1508,
+      "terminal": 1508,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 1108,
+        "complete": 392,
+        "intentional_cancel": 8
+      },
+      "summary_present": true,
+      "complete": 392,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 598.9985851099918,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 392,
+      "complete_with_usage": 392,
+      "complete_correct_json": 392,
+      "slo_pass": 178,
+      "goodput_per_planned_second": 0.2966666666666667,
+      "arrival_ttft_median_s": 10.70796625343064,
+      "arrival_ttft_p95_s": 23.39717785234897,
+      "ttft_observed": 392,
+      "tpot_median_s": 0.016027944643220896,
+      "tpot_p95_s": 0.024669855371186194,
+      "tpot_observed": 392,
+      "cache_usage_observed": 392,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 237,
+      "slices": {
+        "target2K": {
+          "offered": 758,
+          "terminal": 758,
+          "complete": 200,
+          "slo_pass": 102
+        },
+        "target8K": {
+          "offered": 750,
+          "terminal": 750,
+          "complete": 192,
+          "slo_pass": 76
+        },
+        "intended_cold": {
+          "offered": 293,
+          "terminal": 293,
+          "complete": 72,
+          "slo_pass": 23
+        },
+        "shared": {
+          "offered": 1215,
+          "terminal": 1215,
+          "complete": 320,
+          "slo_pass": 155
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0029-round_robin.jsonl",
+      "policy": "round_robin",
+      "seed": 20268018,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1508,
+      "terminal": 1508,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "complete": 328,
+        "client_overload": 1176,
+        "intentional_cancel": 4
+      },
+      "summary_present": true,
+      "complete": 328,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 598.9982522060018,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 328,
+      "complete_with_usage": 328,
+      "complete_correct_json": 328,
+      "slo_pass": 152,
+      "goodput_per_planned_second": 0.25333333333333335,
+      "arrival_ttft_median_s": 10.877554058104579,
+      "arrival_ttft_p95_s": 38.13324650150679,
+      "ttft_observed": 328,
+      "tpot_median_s": 0.016040879142695173,
+      "tpot_p95_s": 0.024658091914222625,
+      "tpot_observed": 328,
+      "cache_usage_observed": 328,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 193,
+      "slices": {
+        "target2K": {
+          "offered": 758,
+          "terminal": 758,
+          "complete": 161,
+          "slo_pass": 76
+        },
+        "target8K": {
+          "offered": 750,
+          "terminal": 750,
+          "complete": 167,
+          "slo_pass": 76
+        },
+        "intended_cold": {
+          "offered": 293,
+          "terminal": 293,
+          "complete": 63,
+          "slo_pass": 25
+        },
+        "shared": {
+          "offered": 1215,
+          "terminal": 1215,
+          "complete": 265,
+          "slo_pass": 127
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0030-cache_aware.jsonl",
+      "policy": "cache_aware",
+      "seed": 20268018,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1508,
+      "terminal": 1508,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 1138,
+        "complete": 362,
+        "intentional_cancel": 8
+      },
+      "summary_present": true,
+      "complete": 362,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 598.9973999850044,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 362,
+      "complete_with_usage": 362,
+      "complete_correct_json": 362,
+      "slo_pass": 155,
+      "goodput_per_planned_second": 0.25833333333333336,
+      "arrival_ttft_median_s": 11.325515642223763,
+      "arrival_ttft_p95_s": 28.090681073632002,
+      "ttft_observed": 362,
+      "tpot_median_s": 0.01604878221457641,
+      "tpot_p95_s": 0.024716788143320758,
+      "tpot_observed": 362,
+      "cache_usage_observed": 362,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 207,
+      "slices": {
+        "target2K": {
+          "offered": 758,
+          "terminal": 758,
+          "complete": 168,
+          "slo_pass": 78
+        },
+        "target8K": {
+          "offered": 750,
+          "terminal": 750,
+          "complete": 194,
+          "slo_pass": 77
+        },
+        "intended_cold": {
+          "offered": 293,
+          "terminal": 293,
+          "complete": 74,
+          "slo_pass": 16
+        },
+        "shared": {
+          "offered": 1215,
+          "terminal": 1215,
+          "complete": 288,
+          "slo_pass": 139
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0031-cache_feedback.jsonl",
+      "policy": "cache_feedback",
+      "seed": 20268018,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1508,
+      "terminal": 1508,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "complete": 379,
+        "client_overload": 1119,
+        "intentional_cancel": 10
+      },
+      "summary_present": true,
+      "complete": 379,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 598.9977878350037,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 379,
+      "complete_with_usage": 379,
+      "complete_correct_json": 379,
+      "slo_pass": 166,
+      "goodput_per_planned_second": 0.27666666666666667,
+      "arrival_ttft_median_s": 10.77733062756306,
+      "arrival_ttft_p95_s": 26.986621328792523,
+      "ttft_observed": 379,
+      "tpot_median_s": 0.016044823428923598,
+      "tpot_p95_s": 0.024664044750222405,
+      "tpot_observed": 379,
+      "cache_usage_observed": 379,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 231,
+      "slices": {
+        "target2K": {
+          "offered": 758,
+          "terminal": 758,
+          "complete": 188,
+          "slo_pass": 91
+        },
+        "target8K": {
+          "offered": 750,
+          "terminal": 750,
+          "complete": 191,
+          "slo_pass": 75
+        },
+        "intended_cold": {
+          "offered": 293,
+          "terminal": 293,
+          "complete": 68,
+          "slo_pass": 18
+        },
+        "shared": {
+          "offered": 1215,
+          "terminal": 1215,
+          "complete": 311,
+          "slo_pass": 148
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0032-round_robin.jsonl",
+      "policy": "round_robin",
+      "seed": 20268019,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 821,
+      "terminal": 821,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "complete": 328,
+        "client_overload": 482,
+        "intentional_cancel": 11
+      },
+      "summary_present": true,
+      "complete": 328,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.399573467992,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 328,
+      "complete_with_usage": 328,
+      "complete_correct_json": 328,
+      "slo_pass": 173,
+      "goodput_per_planned_second": 0.28833333333333333,
+      "arrival_ttft_median_s": 9.676091737412207,
+      "arrival_ttft_p95_s": 33.43207275284726,
+      "ttft_observed": 328,
+      "tpot_median_s": 0.01603863553568122,
+      "tpot_p95_s": 0.024630370342388883,
+      "tpot_observed": 328,
+      "cache_usage_observed": 328,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 190,
+      "slices": {
+        "target2K": {
+          "offered": 409,
+          "terminal": 409,
+          "complete": 174,
+          "slo_pass": 101
+        },
+        "target8K": {
+          "offered": 412,
+          "terminal": 412,
+          "complete": 154,
+          "slo_pass": 72
+        },
+        "intended_cold": {
+          "offered": 175,
+          "terminal": 175,
+          "complete": 64,
+          "slo_pass": 28
+        },
+        "shared": {
+          "offered": 646,
+          "terminal": 646,
+          "complete": 264,
+          "slo_pass": 145
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0033-least_queue.jsonl",
+      "policy": "least_queue",
+      "seed": 20268019,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 821,
+      "terminal": 821,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "complete": 383,
+        "client_overload": 426,
+        "intentional_cancel": 12
+      },
+      "summary_present": true,
+      "complete": 383,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.3995777609962,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 383,
+      "complete_with_usage": 383,
+      "complete_correct_json": 383,
+      "slo_pass": 208,
+      "goodput_per_planned_second": 0.3466666666666667,
+      "arrival_ttft_median_s": 9.509164602306555,
+      "arrival_ttft_p95_s": 24.56553441811556,
+      "ttft_observed": 383,
+      "tpot_median_s": 0.016034667927929798,
+      "tpot_p95_s": 0.024734443743363956,
+      "tpot_observed": 383,
+      "cache_usage_observed": 383,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 228,
+      "slices": {
+        "target2K": {
+          "offered": 409,
+          "terminal": 409,
+          "complete": 193,
+          "slo_pass": 119
+        },
+        "target8K": {
+          "offered": 412,
+          "terminal": 412,
+          "complete": 190,
+          "slo_pass": 89
+        },
+        "intended_cold": {
+          "offered": 175,
+          "terminal": 175,
+          "complete": 86,
+          "slo_pass": 26
+        },
+        "shared": {
+          "offered": 646,
+          "terminal": 646,
+          "complete": 297,
+          "slo_pass": 182
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0034-cache_feedback.jsonl",
+      "policy": "cache_feedback",
+      "seed": 20268019,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 821,
+      "terminal": 821,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "complete": 364,
+        "client_overload": 448,
+        "intentional_cancel": 9
+      },
+      "summary_present": true,
+      "complete": 364,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.3999301889999,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 364,
+      "complete_with_usage": 364,
+      "complete_correct_json": 364,
+      "slo_pass": 177,
+      "goodput_per_planned_second": 0.295,
+      "arrival_ttft_median_s": 10.329856687487336,
+      "arrival_ttft_p95_s": 26.075601886492908,
+      "ttft_observed": 364,
+      "tpot_median_s": 0.016034246285666347,
+      "tpot_p95_s": 0.024577438182885606,
+      "tpot_observed": 364,
+      "cache_usage_observed": 364,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 214,
+      "slices": {
+        "target2K": {
+          "offered": 409,
+          "terminal": 409,
+          "complete": 199,
+          "slo_pass": 110
+        },
+        "target8K": {
+          "offered": 412,
+          "terminal": 412,
+          "complete": 165,
+          "slo_pass": 67
+        },
+        "intended_cold": {
+          "offered": 175,
+          "terminal": 175,
+          "complete": 78,
+          "slo_pass": 22
+        },
+        "shared": {
+          "offered": 646,
+          "terminal": 646,
+          "complete": 286,
+          "slo_pass": 155
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0035-cache_aware.jsonl",
+      "policy": "cache_aware",
+      "seed": 20268019,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 821,
+      "terminal": 821,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 473,
+        "complete": 336,
+        "intentional_cancel": 12
+      },
+      "summary_present": true,
+      "complete": 336,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.3998764400021,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 336,
+      "complete_with_usage": 336,
+      "complete_correct_json": 336,
+      "slo_pass": 133,
+      "goodput_per_planned_second": 0.22166666666666668,
+      "arrival_ttft_median_s": 12.42553722071898,
+      "arrival_ttft_p95_s": 25.144432932695054,
+      "ttft_observed": 336,
+      "tpot_median_s": 0.016032033036026405,
+      "tpot_p95_s": 0.024629641393143435,
+      "tpot_observed": 336,
+      "cache_usage_observed": 336,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 180,
+      "slices": {
+        "target2K": {
+          "offered": 409,
+          "terminal": 409,
+          "complete": 168,
+          "slo_pass": 75
+        },
+        "target8K": {
+          "offered": 412,
+          "terminal": 412,
+          "complete": 168,
+          "slo_pass": 58
+        },
+        "intended_cold": {
+          "offered": 175,
+          "terminal": 175,
+          "complete": 87,
+          "slo_pass": 17
+        },
+        "shared": {
+          "offered": 646,
+          "terminal": 646,
+          "complete": 249,
+          "slo_pass": 116
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0036-cache_aware.jsonl",
+      "policy": "cache_aware",
+      "seed": 20268020,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1508,
+      "terminal": 1508,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 1156,
+        "complete": 341,
+        "intentional_cancel": 11
+      },
+      "summary_present": true,
+      "complete": 341,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.0387092790043,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 341,
+      "complete_with_usage": 341,
+      "complete_correct_json": 341,
+      "slo_pass": 131,
+      "goodput_per_planned_second": 0.21833333333333332,
+      "arrival_ttft_median_s": 12.331567088825977,
+      "arrival_ttft_p95_s": 28.909131327978685,
+      "ttft_observed": 341,
+      "tpot_median_s": 0.016031911142428208,
+      "tpot_p95_s": 0.02461836149970103,
+      "tpot_observed": 341,
+      "cache_usage_observed": 341,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 185,
+      "slices": {
+        "target2K": {
+          "offered": 771,
+          "terminal": 771,
+          "complete": 169,
+          "slo_pass": 77
+        },
+        "target8K": {
+          "offered": 737,
+          "terminal": 737,
+          "complete": 172,
+          "slo_pass": 54
+        },
+        "intended_cold": {
+          "offered": 285,
+          "terminal": 285,
+          "complete": 75,
+          "slo_pass": 21
+        },
+        "shared": {
+          "offered": 1223,
+          "terminal": 1223,
+          "complete": 266,
+          "slo_pass": 110
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0037-cache_feedback.jsonl",
+      "policy": "cache_feedback",
+      "seed": 20268020,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1508,
+      "terminal": 1508,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 1107,
+        "complete": 385,
+        "intentional_cancel": 16
+      },
+      "summary_present": true,
+      "complete": 385,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.038884205991,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 385,
+      "complete_with_usage": 385,
+      "complete_correct_json": 385,
+      "slo_pass": 190,
+      "goodput_per_planned_second": 0.31666666666666665,
+      "arrival_ttft_median_s": 10.324283350579208,
+      "arrival_ttft_p95_s": 26.16722782234135,
+      "ttft_observed": 385,
+      "tpot_median_s": 0.016023203215029622,
+      "tpot_p95_s": 0.024614871342574975,
+      "tpot_observed": 385,
+      "cache_usage_observed": 385,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 233,
+      "slices": {
+        "target2K": {
+          "offered": 771,
+          "terminal": 771,
+          "complete": 198,
+          "slo_pass": 119
+        },
+        "target8K": {
+          "offered": 737,
+          "terminal": 737,
+          "complete": 187,
+          "slo_pass": 71
+        },
+        "intended_cold": {
+          "offered": 285,
+          "terminal": 285,
+          "complete": 73,
+          "slo_pass": 24
+        },
+        "shared": {
+          "offered": 1223,
+          "terminal": 1223,
+          "complete": 312,
+          "slo_pass": 166
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0038-round_robin.jsonl",
+      "policy": "round_robin",
+      "seed": 20268020,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1508,
+      "terminal": 1508,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 1185,
+        "complete": 313,
+        "intentional_cancel": 10
+      },
+      "summary_present": true,
+      "complete": 313,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.0385256070003,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 313,
+      "complete_with_usage": 313,
+      "complete_correct_json": 313,
+      "slo_pass": 130,
+      "goodput_per_planned_second": 0.21666666666666667,
+      "arrival_ttft_median_s": 12.64853459862934,
+      "arrival_ttft_p95_s": 33.58537456271006,
+      "ttft_observed": 313,
+      "tpot_median_s": 0.016040213143112072,
+      "tpot_p95_s": 0.02457999238623805,
+      "tpot_observed": 313,
+      "cache_usage_observed": 313,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 178,
+      "slices": {
+        "target2K": {
+          "offered": 771,
+          "terminal": 771,
+          "complete": 160,
+          "slo_pass": 70
+        },
+        "target8K": {
+          "offered": 737,
+          "terminal": 737,
+          "complete": 153,
+          "slo_pass": 60
+        },
+        "intended_cold": {
+          "offered": 285,
+          "terminal": 285,
+          "complete": 64,
+          "slo_pass": 21
+        },
+        "shared": {
+          "offered": 1223,
+          "terminal": 1223,
+          "complete": 249,
+          "slo_pass": 109
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0039-least_queue.jsonl",
+      "policy": "least_queue",
+      "seed": 20268020,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1508,
+      "terminal": 1508,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 1132,
+        "complete": 363,
+        "intentional_cancel": 13
+      },
+      "summary_present": true,
+      "complete": 363,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.0392567149975,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 363,
+      "complete_with_usage": 363,
+      "complete_correct_json": 363,
+      "slo_pass": 168,
+      "goodput_per_planned_second": 0.28,
+      "arrival_ttft_median_s": 10.5931350033934,
+      "arrival_ttft_p95_s": 26.95044817274608,
+      "ttft_observed": 363,
+      "tpot_median_s": 0.016063252286195557,
+      "tpot_p95_s": 0.024616190736040672,
+      "tpot_observed": 363,
+      "cache_usage_observed": 363,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 209,
+      "slices": {
+        "target2K": {
+          "offered": 771,
+          "terminal": 771,
+          "complete": 184,
+          "slo_pass": 91
+        },
+        "target8K": {
+          "offered": 737,
+          "terminal": 737,
+          "complete": 179,
+          "slo_pass": 77
+        },
+        "intended_cold": {
+          "offered": 285,
+          "terminal": 285,
+          "complete": 79,
+          "slo_pass": 20
+        },
+        "shared": {
+          "offered": 1223,
+          "terminal": 1223,
+          "complete": 284,
+          "slo_pass": 148
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0040-cache_aware.jsonl",
+      "policy": "cache_aware",
+      "seed": 20268021,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 808,
+      "terminal": 808,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 400,
+        "complete": 399,
+        "intentional_cancel": 9
+      },
+      "summary_present": true,
+      "complete": 399,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.6295574589894,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 399,
+      "complete_with_usage": 399,
+      "complete_correct_json": 399,
+      "slo_pass": 202,
+      "goodput_per_planned_second": 0.33666666666666667,
+      "arrival_ttft_median_s": 9.8518509844871,
+      "arrival_ttft_p95_s": 22.89103950492133,
+      "ttft_observed": 399,
+      "tpot_median_s": 0.01601613749932897,
+      "tpot_p95_s": 0.024621401186180135,
+      "tpot_observed": 399,
+      "cache_usage_observed": 399,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 258,
+      "slices": {
+        "target2K": {
+          "offered": 424,
+          "terminal": 424,
+          "complete": 216,
+          "slo_pass": 127
+        },
+        "target8K": {
+          "offered": 384,
+          "terminal": 384,
+          "complete": 183,
+          "slo_pass": 75
+        },
+        "intended_cold": {
+          "offered": 148,
+          "terminal": 148,
+          "complete": 68,
+          "slo_pass": 21
+        },
+        "shared": {
+          "offered": 660,
+          "terminal": 660,
+          "complete": 331,
+          "slo_pass": 181
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0041-cache_feedback.jsonl",
+      "policy": "cache_feedback",
+      "seed": 20268021,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 808,
+      "terminal": 808,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 392,
+        "complete": 406,
+        "intentional_cancel": 10
+      },
+      "summary_present": true,
+      "complete": 406,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.6294692749943,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 406,
+      "complete_with_usage": 406,
+      "complete_correct_json": 406,
+      "slo_pass": 233,
+      "goodput_per_planned_second": 0.3883333333333333,
+      "arrival_ttft_median_s": 8.56570089788147,
+      "arrival_ttft_p95_s": 23.75743489303204,
+      "ttft_observed": 406,
+      "tpot_median_s": 0.016028046857432594,
+      "tpot_p95_s": 0.02476411358916916,
+      "tpot_observed": 406,
+      "cache_usage_observed": 406,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 261,
+      "slices": {
+        "target2K": {
+          "offered": 424,
+          "terminal": 424,
+          "complete": 211,
+          "slo_pass": 136
+        },
+        "target8K": {
+          "offered": 384,
+          "terminal": 384,
+          "complete": 195,
+          "slo_pass": 97
+        },
+        "intended_cold": {
+          "offered": 148,
+          "terminal": 148,
+          "complete": 71,
+          "slo_pass": 22
+        },
+        "shared": {
+          "offered": 660,
+          "terminal": 660,
+          "complete": 335,
+          "slo_pass": 211
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0042-least_queue.jsonl",
+      "policy": "least_queue",
+      "seed": 20268021,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 808,
+      "terminal": 808,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 420,
+        "complete": 378,
+        "intentional_cancel": 10
+      },
+      "summary_present": true,
+      "complete": 378,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.6303369009984,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 378,
+      "complete_with_usage": 378,
+      "complete_correct_json": 378,
+      "slo_pass": 203,
+      "goodput_per_planned_second": 0.3383333333333333,
+      "arrival_ttft_median_s": 9.579507911927067,
+      "arrival_ttft_p95_s": 25.419290516024187,
+      "ttft_observed": 378,
+      "tpot_median_s": 0.016008277000115152,
+      "tpot_p95_s": 0.024653948364201435,
+      "tpot_observed": 378,
+      "cache_usage_observed": 378,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 233,
+      "slices": {
+        "target2K": {
+          "offered": 424,
+          "terminal": 424,
+          "complete": 198,
+          "slo_pass": 124
+        },
+        "target8K": {
+          "offered": 384,
+          "terminal": 384,
+          "complete": 180,
+          "slo_pass": 79
+        },
+        "intended_cold": {
+          "offered": 148,
+          "terminal": 148,
+          "complete": 68,
+          "slo_pass": 17
+        },
+        "shared": {
+          "offered": 660,
+          "terminal": 660,
+          "complete": 310,
+          "slo_pass": 186
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0043-round_robin.jsonl",
+      "policy": "round_robin",
+      "seed": 20268021,
+      "rate": 1.176,
+      "endpoints": [
+        "http://127.0.0.1:18081/v1",
+        "http://127.0.0.1:18082/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 808,
+      "terminal": 808,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 482,
+        "complete": 318,
+        "intentional_cancel": 8
+      },
+      "summary_present": true,
+      "complete": 318,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.6294765150087,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 318,
+      "complete_with_usage": 318,
+      "complete_correct_json": 318,
+      "slo_pass": 153,
+      "goodput_per_planned_second": 0.255,
+      "arrival_ttft_median_s": 10.454202222055756,
+      "arrival_ttft_p95_s": 39.63119964456054,
+      "ttft_observed": 318,
+      "tpot_median_s": 0.016031813643037043,
+      "tpot_p95_s": 0.02465331805698432,
+      "tpot_observed": 318,
+      "cache_usage_observed": 318,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 187,
+      "slices": {
+        "target2K": {
+          "offered": 424,
+          "terminal": 424,
+          "complete": 169,
+          "slo_pass": 80
+        },
+        "target8K": {
+          "offered": 384,
+          "terminal": 384,
+          "complete": 149,
+          "slo_pass": 73
+        },
+        "intended_cold": {
+          "offered": 148,
+          "terminal": 148,
+          "complete": 61,
+          "slo_pass": 21
+        },
+        "shared": {
+          "offered": 660,
+          "terminal": 660,
+          "complete": 257,
+          "slo_pass": 132
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0044-round_robin.jsonl",
+      "policy": "round_robin",
+      "seed": 20268022,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1508,
+      "terminal": 1508,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "complete": 327,
+        "client_overload": 1173,
+        "intentional_cancel": 8
+      },
+      "summary_present": true,
+      "complete": 327,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.3495397049992,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 327,
+      "complete_with_usage": 327,
+      "complete_correct_json": 327,
+      "slo_pass": 148,
+      "goodput_per_planned_second": 0.24666666666666667,
+      "arrival_ttft_median_s": 11.801548055169405,
+      "arrival_ttft_p95_s": 35.16773871020414,
+      "ttft_observed": 327,
+      "tpot_median_s": 0.016044716428690924,
+      "tpot_p95_s": 0.024685889800457515,
+      "tpot_observed": 327,
+      "cache_usage_observed": 327,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 188,
+      "slices": {
+        "target2K": {
+          "offered": 712,
+          "terminal": 712,
+          "complete": 167,
+          "slo_pass": 83
+        },
+        "target8K": {
+          "offered": 796,
+          "terminal": 796,
+          "complete": 160,
+          "slo_pass": 65
+        },
+        "intended_cold": {
+          "offered": 305,
+          "terminal": 305,
+          "complete": 70,
+          "slo_pass": 24
+        },
+        "shared": {
+          "offered": 1203,
+          "terminal": 1203,
+          "complete": 257,
+          "slo_pass": 124
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0045-least_queue.jsonl",
+      "policy": "least_queue",
+      "seed": 20268022,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1508,
+      "terminal": 1508,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "complete": 380,
+        "client_overload": 1119,
+        "intentional_cancel": 9
+      },
+      "summary_present": true,
+      "complete": 380,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.3494692109962,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 380,
+      "complete_with_usage": 380,
+      "complete_correct_json": 380,
+      "slo_pass": 190,
+      "goodput_per_planned_second": 0.31666666666666665,
+      "arrival_ttft_median_s": 10.007285058891284,
+      "arrival_ttft_p95_s": 26.7140541657107,
+      "ttft_observed": 380,
+      "tpot_median_s": 0.016026708071357074,
+      "tpot_p95_s": 0.024675100860934305,
+      "tpot_observed": 380,
+      "cache_usage_observed": 380,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 234,
+      "slices": {
+        "target2K": {
+          "offered": 712,
+          "terminal": 712,
+          "complete": 176,
+          "slo_pass": 93
+        },
+        "target8K": {
+          "offered": 796,
+          "terminal": 796,
+          "complete": 204,
+          "slo_pass": 97
+        },
+        "intended_cold": {
+          "offered": 305,
+          "terminal": 305,
+          "complete": 68,
+          "slo_pass": 18
+        },
+        "shared": {
+          "offered": 1203,
+          "terminal": 1203,
+          "complete": 312,
+          "slo_pass": 172
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0046-cache_feedback.jsonl",
+      "policy": "cache_feedback",
+      "seed": 20268022,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1508,
+      "terminal": 1508,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "complete": 369,
+        "client_overload": 1128,
+        "intentional_cancel": 11
+      },
+      "summary_present": true,
+      "complete": 369,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.3495363080001,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 369,
+      "complete_with_usage": 369,
+      "complete_correct_json": 369,
+      "slo_pass": 180,
+      "goodput_per_planned_second": 0.3,
+      "arrival_ttft_median_s": 10.352644771308405,
+      "arrival_ttft_p95_s": 26.724097404017805,
+      "ttft_observed": 369,
+      "tpot_median_s": 0.016056377499938077,
+      "tpot_p95_s": 0.024662052385558908,
+      "tpot_observed": 369,
+      "cache_usage_observed": 369,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 224,
+      "slices": {
+        "target2K": {
+          "offered": 712,
+          "terminal": 712,
+          "complete": 172,
+          "slo_pass": 103
+        },
+        "target8K": {
+          "offered": 796,
+          "terminal": 796,
+          "complete": 197,
+          "slo_pass": 77
+        },
+        "intended_cold": {
+          "offered": 305,
+          "terminal": 305,
+          "complete": 70,
+          "slo_pass": 18
+        },
+        "shared": {
+          "offered": 1203,
+          "terminal": 1203,
+          "complete": 299,
+          "slo_pass": 162
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    },
+    {
+      "file": "retained-run/a-heldout/block-0047-cache_aware.jsonl",
+      "policy": "cache_aware",
+      "seed": 20268022,
+      "rate": 2.184,
+      "endpoints": [
+        "http://127.0.0.1:18082/v1",
+        "http://127.0.0.1:18081/v1"
+      ],
+      "planned_seconds": 600.0,
+      "offered": 1508,
+      "terminal": 1508,
+      "unresolved_arrivals": 0,
+      "outcomes": {
+        "client_overload": 1115,
+        "complete": 382,
+        "intentional_cancel": 11
+      },
+      "summary_present": true,
+      "complete": 382,
+      "stopped_by_lease": false,
+      "actual_exposure_seconds": 600.0,
+      "exposure_lower_bound_seconds": 599.3494834729936,
+      "exposure_upper_bound_seconds": 600.0,
+      "exposure_scope": "Full unrevoked window exact planned duration; truncated source-v3 has no exact admission-close clock, so only arrival/wall bounds are available.",
+      "full_planned_window_qualified": true,
+      "complete_with_done_and_finish": 382,
+      "complete_with_usage": 382,
+      "complete_correct_json": 382,
+      "slo_pass": 197,
+      "goodput_per_planned_second": 0.3283333333333333,
+      "arrival_ttft_median_s": 9.676460513095662,
+      "arrival_ttft_p95_s": 27.644296636417856,
+      "ttft_observed": 382,
+      "tpot_median_s": 0.01602832264325116,
+      "tpot_p95_s": 0.024684152283017673,
+      "tpot_observed": 382,
+      "cache_usage_observed": 382,
+      "cache_usage_unknown": 0,
+      "positive_cached_token_requests": 231,
+      "slices": {
+        "target2K": {
+          "offered": 712,
+          "terminal": 712,
+          "complete": 173,
+          "slo_pass": 101
+        },
+        "target8K": {
+          "offered": 796,
+          "terminal": 796,
+          "complete": 209,
+          "slo_pass": 96
+        },
+        "intended_cold": {
+          "offered": 305,
+          "terminal": 305,
+          "complete": 72,
+          "slo_pass": 15
+        },
+        "shared": {
+          "offered": 1203,
+          "terminal": 1203,
+          "complete": 310,
+          "slo_pass": 182
+        }
+      },
+      "scope": "All offered demand retained. TPOT is server-token-normalized visible-output approximation; missing values remain missing."
+    }
+  ],
+  "policies": {
+    "cache_aware": {
+      "blocks": 12,
+      "planned_seconds": 7200.0,
+      "full_planned_window_blocks": 12,
+      "actual_exposure_seconds": 7200.0,
+      "descriptive_scope": "Includes all offered demand and truncated blocks; not the causal inference population",
+      "offered": 14138,
+      "complete": 4422,
+      "slo_pass": 2123,
+      "goodput_per_planned_second": 0.29486111111111113,
+      "outcomes": {
+        "client_overload": 9581,
+        "complete": 4422,
+        "intentional_cancel": 135
+      }
+    },
+    "cache_feedback": {
+      "blocks": 12,
+      "planned_seconds": 7200.0,
+      "full_planned_window_blocks": 12,
+      "actual_exposure_seconds": 7200.0,
+      "descriptive_scope": "Includes all offered demand and truncated blocks; not the causal inference population",
+      "offered": 14138,
+      "complete": 4549,
+      "slo_pass": 2261,
+      "goodput_per_planned_second": 0.3140277777777778,
+      "outcomes": {
+        "client_overload": 9453,
+        "complete": 4549,
+        "intentional_cancel": 136
+      }
+    },
+    "least_queue": {
+      "blocks": 12,
+      "planned_seconds": 7200.0,
+      "full_planned_window_blocks": 12,
+      "actual_exposure_seconds": 7200.0,
+      "descriptive_scope": "Includes all offered demand and truncated blocks; not the causal inference population",
+      "offered": 14138,
+      "complete": 4505,
+      "slo_pass": 2293,
+      "goodput_per_planned_second": 0.3184722222222222,
+      "outcomes": {
+        "client_overload": 9497,
+        "complete": 4505,
+        "intentional_cancel": 136
+      }
+    },
+    "round_robin": {
+      "blocks": 12,
+      "planned_seconds": 7200.0,
+      "full_planned_window_blocks": 12,
+      "actual_exposure_seconds": 7200.0,
+      "descriptive_scope": "Includes all offered demand and truncated blocks; not the causal inference population",
+      "offered": 14138,
+      "complete": 3976,
+      "slo_pass": 1922,
+      "goodput_per_planned_second": 0.26694444444444443,
+      "outcomes": {
+        "client_overload": 10039,
+        "complete": 3976,
+        "intentional_cancel": 123
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "policy": "cache_aware",
+      "baseline": "round_robin",
+      "matched_complete_cycles": 12,
+      "mean_goodput_difference": 0.027916666666666673,
+      "paired_cycle_bootstrap95": [
+        -0.006944444444444441,
+        0.06250347222222222
+      ],
+      "scope": "Matched cycle-level offered-load comparisons. At least3cycles for interval. Hot prefixes are matched; intended-cold namespaces differ explicitly. Sequential order/warm cache remain potential carryover."
+    },
+    {
+      "policy": "cache_feedback",
+      "baseline": "round_robin",
+      "matched_complete_cycles": 12,
+      "mean_goodput_difference": 0.047083333333333324,
+      "paired_cycle_bootstrap95": [
+        0.020416666666666663,
+        0.0761145833333333
+      ],
+      "scope": "Matched cycle-level offered-load comparisons. At least3cycles for interval. Hot prefixes are matched; intended-cold namespaces differ explicitly. Sequential order/warm cache remain potential carryover."
+    },
+    {
+      "policy": "least_queue",
+      "baseline": "round_robin",
+      "matched_complete_cycles": 12,
+      "mean_goodput_difference": 0.05152777777777778,
+      "paired_cycle_bootstrap95": [
+        0.019440972222222228,
+        0.07653124999999998
+      ],
+      "scope": "Matched cycle-level offered-load comparisons. At least3cycles for interval. Hot prefixes are matched; intended-cold namespaces differ explicitly. Sequential order/warm cache remain potential carryover."
+    }
+  ],
+  "pending_journal_blocks": 0,
+  "truncated_or_unqualified_blocks": 0,
+  "inference_scope": "Paired CIs consume only full planned windows with summary, no lease stop, and all arrivals terminal. Truncated windows remain in descriptive tables.",
+  "unknown_values_policy": "No imputation of token counts, cache hits, or latency."
+}

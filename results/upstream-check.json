@@ -1,0 +1,48 @@
+{
+  "checked_utc": "2026-10-11T20:20:40.639405+00:00",
+  "main_sha": "f26d9f432ced7b1087d02d29bffed2249df1a18e",
+  "packed_tensor_sha256": "67f29ef270bce1e1c62afa8d4582bafb05f3463f94d10e7a7c9a31235314fd8e",
+  "test_packed_tensor_sha256": "ef60e914d47adc9188edd913eb0141db381bf0154df23198eda4d86b7c4a2f1e",
+  "matches_tested_production_source": true,
+  "final_flush_still_byte_gated": true,
+  "alignment_pr": {
+    "number": 57665,
+    "state": "open",
+    "head_sha": "784b5f890f8382a872632e40cbf0ef68e355f1ce",
+    "merged": false,
+    "url": "https://github.com/vllm-project/vllm/pull/57665"
+  },
+  "human_requirements": [
+    "- Pure code-agent PRs are **not allowed**. A human submitter must understand and defend the change end-to-end.",
+    "- The submitting human must review every changed line and run relevant tests.",
+    "- Clear statement that AI assistance was used."
+  ],
+  "duplicate_searches": [
+    {
+      "query": "repo:vllm-project/vllm is:open packed \"zero-sized\"",
+      "total_count": 1,
+      "incomplete_results": false,
+      "items": [
+        {
+          "number": 59502,
+          "title": "[RFC]: Modulewise weight reload",
+          "state": "open",
+          "url": "https://github.com/vllm-project/vllm/issues/59502"
+        }
+      ]
+    },
+    {
+      "query": "repo:vllm-project/vllm is:open \"packed_ipc_producer\" \"empty\"",
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    {
+      "query": "repo:vllm-project/vllm is:pr \"preserves_zero_sized_tensor_metadata\"",
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    }
+  ],
+  "duplicate_search_scope": "Bounded GitHub issue search, not an exhaustive duplicate guarantee."
+}
