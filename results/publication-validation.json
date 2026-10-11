@@ -9,7 +9,15 @@
   "dashboard_local_links_checked": 15,
   "private_pattern_scan": "pass for selected text artifacts",
   "upstream_patch_dry_run": "pass without offsets/fuzz on byte-identical current production and test files",
-  "full_upstream_pre_commit": "not_run",
-  "github_ci": "not_yet_observed",
+  "full_upstream_pre_commit": "pass for the two affected vLLM files",
+  "github_ci": {
+    "initial_snapshot": "707ceec10f6a8a56df58a8fd2af387888d635499",
+    "url": "https://github.com/bojiang-li/inference-evidence-lab/actions/runs/38172549656",
+    "conclusion": "success",
+    "python_versions": [
+      "3.11",
+      "3.13"
+    ]
+  },
   "new_gpu_tests_this_publication_turn": false
 }

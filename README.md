@@ -1,5 +1,7 @@
 # Inference Evidence Lab
 
+[![CPU evidence checks](https://github.com/bojiang-li/inference-evidence-lab/actions/workflows/cpu.yml/badge.svg)](https://github.com/bojiang-li/inference-evidence-lab/actions/workflows/cpu.yml)
+
 An inspectable inference experiment on two DGX Spark machines. Replay a matched workload, account for every offered request, and compare routing policies without hiding client overload or incomplete streams.
 
 The repository includes the exact Python client and analysis code from an 8 hour experiment, CPU fixtures, compact results, a KV precision pilot, and a small vLLM correctness patch proposal. Documentation is in English. The interactive walkthrough is in Chinese.

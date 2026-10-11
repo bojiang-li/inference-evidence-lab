@@ -1,0 +1,18 @@
+{
+  "base_commit": "f26d9f432ced7b1087d02d29bffed2249df1a18e",
+  "changed_files": [
+    "tests/distributed/test_packed_tensor.py",
+    "vllm/distributed/weight_transfer/packed_tensor.py"
+  ],
+  "diff_stat": "tests/distributed/test_packed_tensor.py           | 16 ++++++++++++++++\n vllm/distributed/weight_transfer/packed_tensor.py |  2 +-\n 2 files changed, 17 insertions(+), 1 deletion(-)",
+  "source_sha256": {
+    "vllm/distributed/weight_transfer/packed_tensor.py": "e5323744ab1e66c142ccf53a4f10166dbdb1a7ee4dd9169b3a86635d9f5d76db",
+    "tests/distributed/test_packed_tensor.py": "4174c2efec38e18d69d0cd686f69bfa82843663034d7d87f1f191b8c181b4e9d"
+  },
+  "matches_gpu_tested_proposal_byte_for_byte": true,
+  "pre_commit_returncode": 0,
+  "command": "pre-commit run --files vllm/distributed/weight_transfer/packed_tensor.py tests/distributed/test_packed_tensor.py",
+  "scope": "Full configured hooks invoked for the two affected files. Applicable hooks pass; hooks without matching files skip normally. No skip overrides or new GPU tests.",
+  "human_line_review": "pending",
+  "human_test_confirmation": "pending"
+}

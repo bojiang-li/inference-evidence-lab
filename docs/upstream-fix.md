@@ -36,7 +36,7 @@ The [upstream PR checklist](https://github.com/vllm-project/vllm/blob/f26d9f432c
 1. Read every changed line and the surrounding producer/consumer contract.
 2. Apply the isolated patch to the checked baseline and inspect the diff.
 3. Run the relevant CUDA tests under an exclusive GPU lease, including both failure controls and the fixed suite.
-4. Run the upstream formatting and lint hooks. Syntax checks alone are insufficient. Full upstream hooks were not run during the overnight experiment.
+4. Run the upstream formatting and lint hooks. Full configured pre-commit hooks were invoked for both affected files during publication preparation and passed. Hooks without matching files skipped normally. The files remain byte identical to the GPU tested proposal. See [publication validation](../results/d-publication-validation.json). This supplements the overnight tests, which did not run full hooks.
 5. Recheck main and overlapping PRs, use the personal author and DCO identity, and include AI disclosure and actual commands/results.
 
 The prepared PR body is outside this repository's experiment results. No submission or human review is claimed here.
@@ -44,7 +44,7 @@ The prepared PR body is outside this repository's experiment results. No submiss
 For a fresh vLLM checkout on the GPU machine, the normal upstream test command is:
 
 ```bash
-python -m pytest -q tests/distributed/test_packed_tensor.py
+.venv/bin/python -m pytest -q tests/distributed/test_packed_tensor.py
 ```
 
 Select `-k preserves_zero_sized_tensor_metadata` for the two new regressions. This command requires vLLM's own development environment and CUDA. The public project's CPU fixtures do not exercise the vLLM patch.
