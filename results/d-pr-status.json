@@ -1,0 +1,21 @@
+{
+  "url": "https://github.com/vllm-project/vllm/pull/61122",
+  "number": 61122,
+  "state": "open",
+  "draft": false,
+  "head_sha": "8be9059f130f3a9924aba0eb8e6bc40618d125c0",
+  "author": "bojiang-li",
+  "author_id": 327132355,
+  "changed_files": 2,
+  "additions": 17,
+  "deletions": 1,
+  "dco": "success",
+  "upstream_ci": "pre-run permission gate failed; actual upstream pre-commit skipped",
+  "local_gpu_tests": 31,
+  "local_spawned_consumer_controls": 7,
+  "local_full_pre_commit": "pass",
+  "human_line_review": "confirmed",
+  "test_execution": "Agent, explicitly delegated by human",
+  "gpu_lease_released": true,
+  "model_loads_this_rerun": 0
+}

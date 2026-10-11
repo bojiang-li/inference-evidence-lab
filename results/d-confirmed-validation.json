@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "variant": "baseline",
+      "returncode": 1,
+      "expected_returncode": 1,
+      "elapsed_s": 3.640704870223999,
+      "log": "baseline.log",
+      "command": [
+        "retained-run/d-ipc/.venv/bin/python",
+        "retained-run/d-human-confirmed-20261011T225220Z/d-ipc/d_empty_fix_pytest.py"
+      ],
+      "log_sha256": "8efd93b803fd257817e5ae5e1229a5fe38c7e1d53612151a4b0c597d96fdc82a"
+    },
+    {
+      "variant": "fixed",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "elapsed_s": 8.628040313720703,
+      "log": "fixed.log",
+      "command": [
+        "retained-run/d-ipc/.venv/bin/python",
+        "retained-run/d-human-confirmed-20261011T225220Z/d-ipc/d_empty_fix_pytest.py"
+      ],
+      "log_sha256": "ba2abd6737a46b6bd90cdf552db2dac45f67d7cd5e6fc49af5ae62f80159aca6"
+    },
+    {
+      "variant": "spawned_consumer",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "elapsed_s": 2.2797670364379883,
+      "log": "spawned_consumer.log",
+      "command": [
+        "retained-run/d-ipc/.venv/bin/python",
+        "retained-run/d-human-confirmed-20261011T225220Z/d-ipc/d_fixed_ipc_envelope.py",
+        "--directory",
+        "retained-run/d-human-confirmed-20261011T225220Z/d-ipc",
+        "--output",
+        "retained-run/d-human-confirmed-20261011T225220Z/d-ipc/spawned-consumer.json"
+      ],
+      "log_sha256": "808f62c339a3e58b3c50345c5b8b981f4c4f8a3a922673e7c8a6faafd6a02728"
+    }
+  ],
+  "source_base": "f26d9f432ced7b1087d02d29bffed2249df1a18e",
+  "human_line_review_confirmed": true,
+  "execution": "Agent executed GPU tests at the explicit request of the human submitter. No claim of human terminal execution.",
+  "source_sha256": {
+    "packed_tensor.py": "e5323744ab1e66c142ccf53a4f10166dbdb1a7ee4dd9169b3a86635d9f5d76db",
+    "test_packed_tensor.py": "4174c2efec38e18d69d0cd686f69bfa82843663034d7d87f1f191b8c181b4e9d"
+  },
+  "no_existing_gpu_compute_processes_at_preflight": true,
+  "torch": "2.13.0+cu130",
+  "validation_root": "retained-run/d-human-confirmed-20261011T225220Z"
+}

@@ -71,7 +71,7 @@ The release includes compact results rather than raw request journals. Readers c
 
 ## Status and attribution
 
-This is an experiment artifact with verified CPU fixtures and compact evidence. The vLLM empty metadata patch is a proposal, not a submitted or merged contribution. [Alignment PR #57665](https://github.com/vllm-project/vllm/pull/57665) is a separate contribution.
+This is an experiment artifact with verified CPU fixtures and compact evidence. The empty metadata fix is submitted as [vLLM PR #61122](https://github.com/vllm-project/vllm/pull/61122) and awaits upstream review. [Alignment PR #57665](https://github.com/vllm-project/vllm/pull/57665) is a separate contribution. Neither is claimed merged.
 
 AI tools assisted with implementation, analysis, the walkthrough, and documentation. The person presenting this project should be able to explain the protocol, source, failures, and measurement limits. The walkthrough was built using [HumanLayer's show-me skill](https://github.com/humanlayer/skills/tree/main/plugins/show-me/skills/show-me).
 

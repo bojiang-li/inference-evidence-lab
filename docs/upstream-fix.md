@@ -1,4 +1,8 @@
-# vLLM empty tensor metadata proposal
+# vLLM empty tensor metadata fix
+
+Submitted as [PR #61122](https://github.com/vllm-project/vllm/pull/61122), head `8be9059f130f3a9924aba0eb8e6bc40618d125c0`. The human submitter confirmed line review and explicitly delegated a fresh GPU rerun to the agent. The rerun reproduced two baseline failures, 31 passing fixed tests, and seven successful spawned consumer controls. [Fresh validation](../results/d-confirmed-validation.json) records the execution roles and source hashes.
+
+DCO passed. Upstream pre-commit is currently stopped at its author/label permission check, which requires a verified/ready label or four merged vLLM contributions. Local full pre-commit hooks passed. The upstream gate has not run the actual lint or GPU tests, so upstream CI is not claimed green.
 
 ## Problem and change
 
@@ -39,7 +43,7 @@ The [upstream PR checklist](https://github.com/vllm-project/vllm/blob/f26d9f432c
 4. Run the upstream formatting and lint hooks. Full configured pre-commit hooks were invoked for both affected files during publication preparation and passed. Hooks without matching files skipped normally. The files remain byte identical to the GPU tested proposal. See [publication validation](../results/d-publication-validation.json). This supplements the overnight tests, which did not run full hooks.
 5. Recheck main and overlapping PRs, use the personal author and DCO identity, and include AI disclosure and actual commands/results.
 
-The prepared PR body is outside this repository's experiment results. No submission or human review is claimed here.
+The PR body discloses human line review and delegated test execution. It does not claim direct human shell execution. The checklist above remains a reproduction reference; upstream review and CI authorization are still pending.
 
 For a fresh vLLM checkout on the GPU machine, the normal upstream test command is:
 

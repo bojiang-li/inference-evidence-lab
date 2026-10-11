@@ -8,7 +8,7 @@ I used matched traces across four policies and shuffled their order within each 
 
 The KV pilot reinforced why cache phase matters. INT8 helped some long first requests but slowed a warm copy slice. I would next repeat deployments independently and measure server queue and direct KV allocation before recommending a configuration.
 
-The IPC investigation was a separate correctness story. Zero bytes can still carry logical tensor metadata. A one line final flush guard dropped solely empty tensors. I preserved the baseline failure, prepared a minimal patch, and checked an actual spawned consumer. Teardown warnings remain a separate unresolved issue.
+The IPC investigation was a separate correctness story. Zero bytes can still carry logical tensor metadata. A one line final flush guard dropped solely empty tensors. I preserved the baseline failure, submitted a minimal patch, and checked an actual spawned consumer. Teardown warnings remain a separate unresolved issue.
 
 AI tools assisted with the work. Only claim responsibilities that you can explain and defend independently.
 
@@ -16,9 +16,9 @@ AI tools assisted with the work. Only claim responsibilities that you can explai
 
 - Built and audited a two-replica inference replay on DGX Spark with 56,552 offered requests, complete terminal accounting, SSE validation, and 12 matched routing cycles over eight hours of offered exposure.
 - Compared routing SLO goodput with cycle bootstrap intervals and evaluated FP16/INT8/Q4_0 KV precision across 27 held out cases and 324 requests while separating first and repeated requests.
-- Reproduced a vLLM packed IPC corner case that drops zero-element tensor metadata and prepared a one line fix with failing baseline controls, GPU regressions, and separate spawned consumer checks.
+- Reproduced a vLLM packed IPC corner case that drops zero-element tensor metadata and submitted a one line fix with failing baseline controls, GPU regressions, and separate spawned consumer checks ([PR #61122](https://github.com/vllm-project/vllm/pull/61122)).
 
-Until the patch is submitted or merged, keep “prepared” in the last bullet. The established open-source contributions on other PRs can be listed separately with their actual merged status.
+PR #61122 is submitted, not merged. The established open-source contributions on other PRs can be listed separately with their actual merged status.
 
 ## Questions to practice
 
